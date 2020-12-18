@@ -58,7 +58,6 @@ button {
   background-size: auto;
   padding-top: 78px;
   color: #fff;
-  /*font-family: 'M PLUS 1p', sans-serif; */
   padding-bottom: 120px;
   font-family: 'Roboto', sans-serif;
 }
@@ -72,7 +71,7 @@ button {
 .container {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  /*  align-items: center; */
   max-width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
@@ -95,14 +94,16 @@ button {
   font-size: 14px;
   font-weight: 700;
 }
+/*
+
 .header-scils {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1430px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1430px;
+    padding-left: 15px;
+    padding-right: 15px;
+} */
 .logo-link {
   font-size: 38px;
   text-decoration: uppercase;
@@ -462,5 +463,10 @@ button {
 }
 li::selection {
   background: #fbdc4d;
+}
+.container-list-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */
