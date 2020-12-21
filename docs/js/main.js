@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    /*
  //моб меню
  const toggleMenu = document.querySelector('.toggle-menu'); //иконка гамбургер
  const mobMenu = document.querySelector('.mobile-menu'); //mob menu
@@ -22,7 +23,7 @@ $(document).ready(function () {
      overlay.classList.remove('active');
      bodyEl.classList.remove('noscroll');
 
- });
+ }); */
  //-фильтрация проектов
  let containerEl = document.querySelector('#projects');
 
