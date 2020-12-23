@@ -1,5 +1,11 @@
 :root {
-   --line: #88b9e7;
+    --text: #000000;
+    --line: #abc8e7;
+    --linehover: #abc8e7;
+    --bordercolor: #88b3e2; 
+     --linea: #88b3e2;
+     --btncolor: #abc8e7;
+     --btnhover: #88b3e2;
 }
 
 * {
@@ -8,7 +14,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: 'Montserrat';
+    font-family: 'Roboto';
     color: #000000;
 }
 
@@ -58,4 +64,25 @@ button {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.line-bottom {
+    position: relative;
+    z-index: 2;   
+    color: #000000; 
+    text-align: left;
+    line-height: normal;
+    text-decoration: uppercase;      
+  
+}
+
+.line-bottom::after {
+    content: "";
+    position: absolute; 
+    bottom: 17px;
+    left: -5px;
+    right: -5px;
+    height: 12px;
+    background-color: #c7daee;
+    z-index: -1;   
 }

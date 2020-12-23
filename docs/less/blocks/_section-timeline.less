@@ -1,0 +1,262 @@
+.section-timeline {
+    max-width: 1600px; 
+    padding-top: 136px;
+    padding-bottom: 150px;
+    font-family: 'Roboto';
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+
+    .header-title {                
+        color: var(--text);        
+        font-size: 64px;
+        font-weight: 800;
+        font-style: normal;
+        letter-spacing: 2.0px;
+        line-height: normal;
+        text-align: center;        
+    }
+
+    .line-bottom::after {
+        bottom: 10px;
+        left: -5px;
+        right: -5px;
+        height: 12px;         
+    }
+}
+
+.timline-title {
+    margin-bottom: 153px;
+}
+
+.timeline-block-item {
+    position: relative;
+    width: 50%;    
+    padding-left: 98px;
+    min-height: 175px;
+    display: flex;  
+   /* align-items: center; */
+
+    &:after {
+        content: "";       
+        position: absolute;       
+        top: 90px;
+        bottom: 0;
+        left: 32px;
+        height: 112px;
+        width: 4px;
+        border-radius: 2px;
+        background-color: #e1eef4;  
+        
+    }
+ /*
+    @media (min-width: 768px) {
+        width: 50%;
+    }
+
+    @media (min-width: 1200px) {
+        width: 100%;
+    } */
+}
+
+.content-time-line {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.timeline-block-item:first-child::before {
+    position: absolute;
+    content: "";
+    right: 0px;
+    top: -74px;
+    bottom: 0px;   
+    height: 57px;
+    width: 4px;
+    border-radius: 2px;
+    background-color: #e1eef4;  
+}
+
+
+.timeline-block-item:nth-child(even) {
+    @media (min-width: 768px) {
+        margin-left: auto;
+
+        padding-right: 0;
+        padding-left: 80px;
+      
+        &::after {
+           left: -5px; 
+            right: auto;
+        }
+
+        .timeline-item-icon {
+            left: -37px;     
+            right: auto;       
+        }       
+    }
+}
+
+.timeline-block-item:nth-child(odd) {
+    @media (min-width: 768px) {
+        padding-left: 0;
+        padding-right: 80px;
+        text-align: right; 
+
+        &::after {
+            left: auto;
+            right: -5px;
+        }
+       .timeline-item-icon {
+           left: auto;
+          right: -37px; 
+       
+       }
+    }
+}
+
+.timeline-block-item:nth-child(odd):last-child:after {
+    display: none;
+   
+}
+
+.timeline-block-item + .timeline-block-item {
+    margin-top: 50px;
+}
+
+.timeline-item-text {
+   
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    padding-top: 18px;
+  
+}
+  
+.timeline-item-icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 74px;
+    height: 74px;
+    border-radius: 28px;    
+    background-color: #ffffff;
+    box-shadow: 0px 3px 35px 0px rgba(0, 112, 187, 0.35); 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+
+p {
+    margin-bottom: 15px;  
+}
+
+p:last-child {
+    margin-bottom: 0;
+} 
+
+
+.title-little {
+    color: var(--text);    
+    font-size: 26px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-bottom: 10px;
+
+    .line-bottom::after {
+        bottom: 5px;
+        left: 0;
+        right: 0;
+        height: 6px;         
+    }   
+}
+
+
+.anim-show {/*
+    /*
+    color: var(--text); 
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    padding-top: 18px; */
+    opacity:0; 
+    transition: 1s; 
+    animation: show 1s 1; 
+    animation-fill-mode: forwards; 
+    animation-delay: 1s;
+    }
+
+    @keyframes show{
+        0%{
+        opacity:0;
+        }
+        100% {
+        opacity:1;
+        }
+        }
+   
+
+        .show-1 {
+            animation-delay: 3s;
+        }
+
+        .show-2 {
+            animation-delay: 4s;
+        }
+
+        .show-3 {
+            animation-delay: 5s;
+        }
+
+        .show-4 {
+           animation-delay: 6s;
+        }
+
+        .show-5 {          
+          animation-delay: 6.5s;
+        }
+
+
+     .timeline-block-item .title-little {
+         display: inline-block;
+            position: relative;
+            color: var(--text);    
+            font-size: 26px;
+            font-weight: 900;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            z-index: 1;   
+            cursor: pointer;
+            
+            
+            &:after {
+                content: "";
+                position: absolute; 
+                left: 0;
+                bottom: 0;
+                height: 5px;
+                width: 0;
+                background-color:rgb(144, 182, 223);
+                z-index: -1;
+                transition: 1s ease;
+            }
+        }  
+        .timeline-block-item:hover {
+            cursor: pointer;
+            .title-little{
+            &:after {
+                width: 100%;
+            }
+
+            .line-bottom::after {
+               display: none;        
+            } 
+        } 
+        }

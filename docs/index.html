@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta type="application/javascript" charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-   
+  <head>
+    <meta type="application/javascript" charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-  
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -29,6 +31,8 @@
           <nav class="header-icons">
             <a class="social-icons" href="#">
               <svg
+                width="30" 
+                height="30"
                 aria-hidden="true"
                 focusable="false"
                 data-prefix="fab"
@@ -47,6 +51,8 @@
             </a>
             <a class="social-icons" href="#">
               <svg
+                width="30" 
+                height="30"
                 aria-hidden="true"
                 focusable="false"
                 data-prefix="fab"
@@ -65,6 +71,8 @@
             </a>
             <a class="social-icons icon-3" href="#">
               <svg
+                width="45"
+                height="30"
                 aria-hidden="true"
                 focusable="false"
                 data-prefix="fab"
@@ -266,56 +274,178 @@
             </button>
           </div>
           <div id="projects" class="content-works">
-            <a
-              href=""
-              target="_blank"
-              class="project-cards card-big mix frontend"
-            >
-              <div>
-                <img src="./img/cards/Forest-trevel.png" alt="" />
-              </div>
+            <div class="project-cards card-big mix frontend">
+              <a href="" target="_blank" class="project-link">
+                <img
+                  class="project-cards-img"
+                  src="./img/cards/Forest-trevel.png"
+                  alt=""
+                />
+                <button class="button anim-show">Смотреть проект</button>
+              </a>
               <h3 class="title-medium">Верстка "Форэст трэвел"</h3>
               <p class="text-portfolio">Верстка многостраничного сайта.</p>
-            </a>
-            <a
-              target="_blank"
-              href="http://a92608eo.beget.tech"
-              class="project-cards card-big mix frontend boots"
-            >
-              <div>
-                <img src="./img/cards/UNIT.png" alt="" />
-              </div>
+            </div>
+
+            <div class="project-cards card-big mix frontend boots">
+              <a
+                href="http://a92608eo.beget.tech"
+                target="_blank"
+                class="project-link"
+              >
+                <img
+                  class="project-cards-img"
+                  src="./img/cards/UNIT.png"
+                  alt=""
+                />
+                <button class="button anim-show">Смотреть проект</button>
+              </a>
               <h3 class="title-medium">Сайт "ЮНИТ"</h3>
               <p class="text-portfolio">Верстка лендинга.</p>
-            </a>
-            <a href="" target="_blank" class="project-cards mix frontend">
-              <div>
-                <img src="./img/cards/Portfolio.png" alt="" />
-              </div>
+            </div>
+
+            <div class="project-cards mix frontend">
+              <a href="" target="_blank" class="project-link">
+                <img
+                  class="project-cards-img"
+                  src="./img/cards/Portfolio.png"
+                  alt=""
+                />
+                <button class="button anim-show">Смотреть проект</button>
+              </a>
               <h3 class="title-medium">Верстка "Portfolio"</h3>
               <p class="text-portfolio">Верстка лендинга.</p>
-            </a>
-            <a href="" target="_blank" class="project-cards mix frontend">
-              <div>
-                <img src="./img/cards/Motobike-card.png" alt="" />
-              </div>
+            </div>
+
+            <div class="project-cards mix frontend">
+              <a href="" target="_blank" class="project-link">
+                <img
+                  class="project-cards-img"
+                  src="./img/cards/Motobike-card.png"
+                  alt=""
+                />
+                <button class="button anim-show">Смотреть проект</button>
+              </a>
               <h3 class="title-medium">Верстка "Мир авто"</h3>
               <p class="text-portfolio">Верстка карточки с товаром</p>
-            </a>
-            <a href="" target="_blank" class="project-cards mix frontend">
-              <div>
-                <img src="./img/cards/Book.png" alt="" />
-              </div>
+            </div>
+
+            <div class="project-cards mix frontend">
+              <a href="" target="_blank" class="project-link">
+                <img
+                  class="project-cards-img"
+                  src="./img/cards/Book.png"
+                  alt=""
+                />
+                <button class="button anim-show">Смотреть проект</button>
+              </a>
               <h3 class="title-medium">Верстка "Мир книг"</h3>
               <p class="text-portfolio">Верстка карточки с товаром</p>
-            </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="section-timeline">
+      <div class="container">
+        <div class="timline-title">
+          <h1 class="header-title">
+            <span class="line-bottom"> Как я работаю</span>
+          </h1>
+        </div>
+        <div class="content-time-line">
+          <div class="timeline-block-item">
+            <div class="timeline-item-text anim-show">
+              <h4 class="title-little">
+                <span class="line-bottom"> Оцениваю макет </span>
+              </h4>
+              <p>Оцениваю объем работы, сложность, нюансы. Задаю вопросы.</p>
+              <p>
+                <strong> Время: 2 - 4 часа </strong>
+              </p>
+            </div>
+            <div class="timeline-item-icon">
+              <img src="./img/svg/layers.png" alt="" />
+            </div>
+          </div>
+          <div class="timeline-block-item">
+            <div class="timeline-item-text anim-show show-1">
+              <h4 class="title-little">
+                <span class="line-bottom"> ТЗ, смета и график работ </span>
+              </h4>
+              <p>
+                Согласовываем техническое задание и график работ по проекту.
+                Осмечиваю стоимость по этапам работы.
+              </p>
+              <p>
+                <strong> Время: 2 - 4 часа </strong>
+              </p>
+            </div>
+            <div class="timeline-item-icon">
+              <img src="./img/svg/presentation-chart.png" alt="" />
+            </div>
+          </div>
+          <div class="timeline-block-item">
+            <div class="timeline-item-text anim-show show-2">
+              <h4 class="title-little">
+                <span class="line-bottom"> Вы держите руку на пульсе </span>
+              </h4>
+              <p>
+                Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в
+                любое время можете видеть актуальное состояние проекта и задач.
+              </p>
+
+              <p>
+                <strong> Время 2 часа </strong>
+              </p>
+            </div>
+            <div class="timeline-item-icon">
+              <img src="./img/svg/24-hours.png" alt="" />
+            </div>
+          </div>
+          <div class="timeline-block-item">
+            <div class="timeline-item-text anim-show show-3">
+              <h4 class="title-little">
+                <span class="line-bottom"> Выполняю каждый этап </span>
+              </h4>
+              <p>
+                Поочередно выполняю каждый этап работы. Передаю результаты.
+                Заказчик производит поэтапную оплату.
+              </p>
+
+              <p>
+                <strong> Время: 2 - 4 часа </strong>
+              </p>
+            </div>
+            <div class="timeline-item-icon">
+              <img src="./img/svg/code-alt.png" alt="" />
+            </div>
+          </div>
+          <div class="timeline-block-item">
+            <div class="timeline-item-text anim-show show-5">
+              <h4 class="title-little">
+                <span class="line-bottom"> Финальное ревью проекта </span>
+              </h4>
+              <p>
+                Проект готов. Финальное ревью и полировка до идеального
+                состояния. Передаю файлы проекта, заливаю сайт на хостинг
+                заказчика.
+              </p>
+              <p>
+                <strong> Время: 2 - 4 часа </strong>
+              </p>
+            </div>
+            <div class="timeline-item-icon">
+              <img src="./img/svg/diamond.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="libs/jquery/jquery-3.0.0.min.js"></script>
     <script src="libs/mixitup3/mixitup.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
-
