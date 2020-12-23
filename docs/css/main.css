@@ -670,7 +670,7 @@ ul li:before {
   font-size: 64px;
   font-weight: 800;
   font-style: normal;
-  letter-spacing: 2.0px;
+  letter-spacing: 2.2px;
   line-height: normal;
   text-align: center;
 }
@@ -682,6 +682,10 @@ ul li:before {
 }
 .timline-title {
   margin-bottom: 153px;
+  max-width: 1005px;
+}
+.content-time-line {
+  max-width: 1005px;
 }
 .timeline-block-item {
   position: relative;
@@ -709,10 +713,6 @@ ul li:before {
   width: 4px;
   border-radius: 2px;
   background-color: #e1eef4;
-}
-.content-time-line {
-  padding-left: 30px;
-  padding-right: 30px;
 }
 .timeline-block-item:first-child::before {
   position: absolute;
