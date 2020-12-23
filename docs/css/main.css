@@ -528,32 +528,6 @@ ul li:before {
   border-style: solid;
   border-color: rgba(196, 211, 228, 0.9);
   margin-bottom: 62px;
-  /*
-    .button {  
-        display: none;
-        transition: 2s;
-       } 
-
-    .button:hover {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;       
-        transform: translate(-50%, -50%);
-        z-index: 1;       
-    }
-*/
-  /*
-    &:hover {       
-    transform: scale(1.05);  
-   box-shadow: 0 2px 6px rgba(201, 218, 235, 0.6);
-     
-    }
-
-    &:active {
-        box-shadow: 0 2px 6px rgba(201, 218, 235, 0.6);
-      
-    } */
 }
 .project-cards .title-medium {
   display: inline-block;
@@ -564,53 +538,6 @@ ul li:before {
 .project-cards .text-portfolio {
   font-size: 20px;
 }
-/*
-.project-cards {
-    display: block;
-    position: relative;
-    transition: 3s;
-   z-index: 1;
-
-   button {  
-    display: none;
-    transition: 2s;
-   }
-
-
-&:after {
-    content: "";
-    position: absolute; 
-    left: 0;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    left: 0;
-   width: 0;
-    background-color:rgba(125, 171, 221, 0.5);
-    z-index: 1;
-    transition: 1s ease;
-   
-}
-}  
- 
-.project-cards:hover {
-    button {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-       
-        transform: translate(-50%, -50%);
-        z-index: 1;
-       
-    
-    }
-   
-    &:after {
-        width: 100%;
-    }
-}
-*/
 .card-big {
   max-width: 560px;
   /*background-color: bisque; */
@@ -727,7 +654,7 @@ ul li:before {
   border-color: #889aac99;
 }
 .project-link .button:active {
-  background-color: sandybrown;
+  background-color: #dd8e8a;
 }
 .section-timeline {
   max-width: 1600px;
