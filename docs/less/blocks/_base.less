@@ -87,6 +87,56 @@ button {
     z-index: -1;   
 }
 
+
+.button {
+    display: inline-block;
+    height: 64px;
+    line-height: 64px;    
+    border-radius: 31px;
+    background-color: var(--btncolor);
+    color: var(--text);    
+    font-size: 22px;
+    font-weight: 700;    
+    letter-spacing: normal;    
+    text-align: center;
+    padding-left: 42px;
+    padding-right: 42px;
+    margin-right: 19px;
+    transition: 0.2s ease;
+
+    &:hover {
+        background-color: var(--btnhover);
+        box-shadow: 0 2px 6px rgba(136, 154, 172, 0.6);
+    }
+
+    &:active {
+        background-color: #88b3e2;
+        box-shadow: 0 2px 6px rgba(136, 154, 172, 0.6);
+    }
+}
+
+.btn-light {    
+    
+    color: #464646;
+    background-color: #ffffff;
+    line-height: 56px;
+    border-width: 4px;  
+    border-style: solid;    
+    border-color: #abc8e7;
+ 
+    &:hover {
+        background-color: #ffffff;
+        border-color: #88b3e2;        
+        color: #797979;
+    }
+
+    &:active {
+        background-color: #ffffff;
+        border-color: #88b3e2;
+        color: #181818;
+    }
+}
+
 .anim-show {
     opacity:0; 
     transition: 1s; 

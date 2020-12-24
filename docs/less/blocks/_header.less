@@ -1,7 +1,7 @@
 .seaction-header {
     position: relative;
     max-width: 1600px;    
-    background-image: url("/img/BG/header-bg.jpg");
+    background-image: url(".img/BG/01.bg.jpg");
     background-repeat: repeat-y;
     background-position: center;
     background-size: auto;
@@ -293,56 +293,8 @@
     align-items: center;
 }
 
-.button {
-    display: inline-block;
-    height: 64px;
-    line-height: 64px;    
-    border-radius: 31px;
-    background-color: var(--btncolor);
-    color: var(--text);    
-    font-size: 22px;
-    font-weight: 700;    
-    letter-spacing: normal;    
-    text-align: center;
-    padding-left: 42px;
-    padding-right: 42px;
-    margin-right: 19px;
-    transition: 0.2s ease;
 
-    &:hover {
-        background-color: var(--btnhover);
-        box-shadow: 0 2px 6px rgba(136, 154, 172, 0.6);
-    }
 
-    &:active {
-        background-color: #88b3e2;
-        box-shadow: 0 2px 6px rgba(136, 154, 172, 0.6);
-    }
-}
-
-.btn-light {    
-    border-radius: 31px;
-    color: #464646;
-    background-color: #ffffff;
-    line-height: 56px;
-    border-width: 4px;
-    padding-left: 42px;
-    padding-right: 42px;
-    border-style: solid;    
-    border-color: #abc8e7;
- 
-    &:hover {
-        background-color: #ffffff;
-        border-color: #88b3e2;        
-        color: #797979;
-    }
-
-    &:active {
-        background-color: #ffffff;
-        border-color: #88b3e2;
-        color: #181818;
-    }
-}
 
 .header-content-img {  
     max-width: 1600px;
@@ -422,7 +374,7 @@
 }
 
 
-.mail-link {     
+.link-style {     
     text-shadow: 0 3px 42px #ffffff;
     color: #000000;  
     font-size: 24px;
@@ -431,7 +383,7 @@
     letter-spacing: normal;
     line-height: 24px;
     text-align: left;
-    text-decoration: underline; 
+  
     text-decoration: none;
     transition: 0.2s ease;
     border-bottom: 2px solid #393f47; 
@@ -447,7 +399,8 @@
     }
 }
 
-.mail-link:active {
+
+.link-style:active {
     color: #ea655f;
 }
 
@@ -499,6 +452,9 @@
 	background: #c7daee; 
 }
 
-ul li:before {
+.list-content {
+  .list-text:before {
      content:  " — ";  
+}
+
 }
