@@ -109,7 +109,7 @@
             </p>
             <div class="header-buttons">
               <a class="button" href="#">Познакомиться</a>
-              <a class="button btn-light" href="#">Контакты</a>
+              <a class="button light" href="#">Контакты</a>
             </div>
           </div>
 
@@ -140,8 +140,9 @@
           </div>
 
           <div class="header-social-icons">
+            <div class="social-column">
             <h3 class="title-medium">На связи:</h3>
-            <div class="block-social-icons">
+            <div class="social-block">
               <a class="social-icons-item" href="#">
                 <svg
                   aria-hidden="true"
@@ -237,7 +238,7 @@
                 </svg>
               </a>
             </div>
-
+            </div>
             <div class="mail-link-block">
               <a href="mailto:krylovairinka84@gmail.com" class="link-style">
                 krylovairinka84@gmail.com
@@ -456,6 +457,8 @@
         </div>
 
         <div class="content-contacts">
+         
+
           <div class="contacts-address">
           <div class="text-contacts">
             <p>
@@ -472,6 +475,8 @@
               <li class="contacts-list-item">Адрес</li>
             </ul>
           </div>
+
+          
 
           <div class="contacts-list-inform">
             <ul>
@@ -490,7 +495,7 @@
           </div>         
           </div>
 
-          <div class="block-social-icons">
+          <div class="social-block">
             <a class="social-icons-item" href="#">
               <svg
                 aria-hidden="true"
@@ -585,28 +590,29 @@
                 ></path>
               </svg>
             </a>
-          </div>
-
-
-
+          </div>       
         </div>
 
-          <div class="contscts-form">
+        
+        <div class="contacts-form-wrapper">
+
+          <div class="contacts-form">
             <div class="form">
               <form class="form-block">
 
 
               
                 <div class="form-item">
-                  <input class="placeholder-text" name="email" id="form-mail" placeholder=".info_somemail_com "></input>
+                  <input class="form-field" name="email" id="form-mail" placeholder=".info_somemail_com "></input>
                   <label class="form-text" for="form-mail">Ваш_Email </label>
                 </div>
                 <div class="form-item">
-                  <input class="placeholder-text" name="subject" type="text" id="subject-name" placeholder="Тема письма">
+                  <input class="form-field" name="subject" type="text" id="subject-name" placeholder="Тема письма">
                   <label class="form-text" for="subject-name">Тема письма</label>
                 </div>
                 <div class="form-item">
-                  <input class="placeholder-text" name="text" type="text" id="text-forms" placeholder="В свободном формате">
+                  <textarea class="form-field" name="text" id="text-forms" type="text" placeholder="В свободном формате"></textarea>
+                 
                   <label class="form-text" for="text-forms">Сообщение</label>
                 </div>                        
                 <button class="button" type="submit">Отправить</button>
@@ -617,12 +623,36 @@
 
           </div>
 
+        </div>
 
         </div>
+
+
 
       </div>
 
     </section>
+
+    <footer class="footer">
+      <div class="container">
+     <div class="footer-copyright-name">
+        <p>
+          © 2020 - Ирина Крылова
+        </p>
+      </div>
+
+      <div class="footer-text">
+        <p>
+          Веб-разработчик из Москвы, занимаюсь версткой и созданием сайтов.
+        </p>
+        <p>
+          Этот сайт сделала в рамках прохождения обучения по верстке на курсах от <a class="footer-link" href="https://webcademy.ru/">WebCademy.ru</a>
+        </p>
+      </div>
+
+    </div>
+
+    </footer>
 
     <script src="libs/jquery/jquery-3.0.0.min.js"></script>
     <script src="libs/mixitup3/mixitup.min.js"></script>
