@@ -160,36 +160,53 @@
 }
 
 .social-icons icon-3 {
-
-        width: 50px;
-       
+      max-width: 50px;       
     }
 
 
-   .social-icons svg .icon-1 {
+  .social-icons svg .icon-1 {
     fill: #000000;
-    transition: 0.2s ease;
-    &:hover, &:active {
-        fill: #0077b5;
-    }
+    transition: 0.5s ease;    
 } 
 
+.social-icons:hover svg .icon-1 {
+    fill: #0077b5;
+    transform: scale(1.01);
+}
+.social-icons:active svg .icon-1 {
+    fill: #0077b5;
+    transform: scale(1.01);
+}
+
+    
 .social-icons svg .icon-2 {
     fill: #000000;
-    transition: 0.2s ease;
-    &:hover, &:active {
-        fill: #6cc644;
+    transition: 0.5s ease;
     }
-} 
+
+.social-icons:hover svg .icon-2 {
+    fill: #6cc644;
+    transform: scale(1.01);
+}
+.social-icons:active svg .icon-2 {
+    fill: #6cc644;
+    transform: scale(1.01);
+}
 
 .social-icons svg .icon-3 {
-
     fill: #000000;
-    transition: 0.2s ease;
-    &:hover, &:active {
-        fill: #45668e;
-    }
+    transition: 0.5s ease;
 }
+
+.social-icons:hover svg .icon-3 {
+    fill: #45668e;
+    transform: scale(1.01);
+}
+.social-icons:active svg .icon-3 {
+    fill: #45668e;
+    transform: scale(1.01);
+}
+
 /*
 .container {    
     max-width: 1170px;   
@@ -198,6 +215,7 @@
    
 }
 */
+
 .header-content-wrapper {
     display: flex;
     justify-content: space-between;
@@ -417,40 +435,9 @@
     margin-left: -3px;
 }
 
-.social-icons-item svg .icons-content-1 {
-    fill: #000000;
-    transition: 0.2s ease;
-    &:hover, &:active {
-        fill: #6cc644;
-    }
-}
 
-.social-icons-item svg .icons-content-2 {
-    fill: #039be5;
-    transition: 0.2s ease;
-    &:hover, &:active {
-        fill:  #44b2e9;
-    }
-}
 
-.social-icons-item svg .icons-content-3 {
-    fill: #4d76a1;
-    transition: 0.2s ease;
-    &:hover, &:active {
-        fill: #86acda;
-    }
-}
 
-.social-icons-item svg .icons-content-4 {
-    fill: #3b5998;
-    transition: 0.2s ease;
-    &:hover, &:active {
-        fill: #486ab4;
-    }
-}
- li::selection {
-	background: #c7daee; 
-}
 
 .list-content {
   .list-text:before {
@@ -458,3 +445,5 @@
 }
 
 }
+
+

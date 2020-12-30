@@ -33,4 +33,57 @@ $(document).ready(function () {
      }
  });
 
+ // FORM VALIDATE//
+
+$('.contact-form').validate({
+    rules: {
+        email: {
+            required: true,
+            email: true
+        },
+        subject: {
+            required: true
+        },
+        message: {
+            required: true
+        }
+    },
+    messages: {
+        email: {
+            required: 'Введите email',
+            email: 'отсутствует символ @'
+        },
+        subject: {
+            required: 'Введите тему сообщения'
+        },
+        message: {
+            required: 'Введите текст сообщения'
+        }
+    },
+    submitHandler: function (form) {
+        ajaxFormSubmit();
+    }
 })
+
+// Функция отправки формы на сервер//
+
+    function ajaxFormSubmit() {
+        let string = $(".contact-form").serialize();
+        $.ajax({
+            type: "POST",
+            url: "php/mail.php",
+            data: string,
+
+            success: function (html) {
+                $(".contact-form").slideUp(800);
+                $('#answer').html(html);
+            }
+        });
+        return false;
+
+    }
+
+
+})
+
+
