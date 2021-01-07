@@ -1,29 +1,101 @@
 .section-contacts {
-    padding-top: 140px;
-    padding-bottom: 150px;
-    background-image: url(../img/BG/02.bg.jpg);
-    background-repeat: repeat-y;
-    background-position: center;
-    background-size: auto;
+    max-width: 320px;
+    padding-top: 52px;
+    padding-bottom: 66px;
     background-color: #f4f8f9;
     font-family: 'Roboto';
     margin-left: auto;
     margin-right: auto;
     color: var(--text);
 
+    .sections-title {
+        font-size: 42px;
+        color: var(--text);
+        font-weight: 800;
+        line-height: 1.2;
+        text-align: center; 
+        margin-bottom: 40px; 
+    /*    letter-spacing: 2.2px;  */
+    }
 
-    .header-title-second {
+    .button {
+        width: 100%;
+        font-size: 20px;
+        height: 54px;
+        line-height: 54px;        
+    }
+
+    li {
+      /*  margin-bottom: 28px; */
+    }
+
+    li:last-child {
+        margin-bottom: 0;
+    }
+    .link-style { 
+       /*font-size: 18px;*/
+       color: #039be5;      
+       border-bottom: none;        
+        &:hover {            
+            color: #ea655f;
+        }
+    
+        &:active {          
+            color: #ea655f;
+        }
+    }
+
+    .line-bottom::after {
+        bottom: 8px;
+        left: -2px;
+        right: -2px;
+        height: 12px;         
+    }  
+
+    
+
+    @media (min-width: 768px) {
+        max-width: 768px;
+        padding-top: 78px;
+        padding-bottom: 90px;
+        margin-left: 0;
+        margin-right: 0;
+        
+        .sections-title {
+            font-size: 52px;
+            margin-bottom: 62px;
+        }
+
+        .line-bottom::after {
+            bottom: 8px;
+            left: -5px;
+            right: -5px;
+            height: 12px;         
+        }  
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+    max-width: unset;             
+    padding-top: 140px;
+    padding-bottom: 150px;
+    background-image: url(../img/BG/02.bg.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: auto;
+  
+    .sections-title {
         font-size: 64px;
         color: var(--text);
         font-weight: 800;
         line-height: 1.2;
         text-align: center; 
-        margin-bottom: 65px; 
+        margin-bottom: 70px; 
         letter-spacing: 2.2px;  
     }
 
     li {
-        margin-bottom: 28px;
+        
     }
 
     li:last-child {
@@ -47,32 +119,64 @@
         left: -3px;
         right: -3px;
         height: 12px;         
+    }  
+
     }
-   
-   
 }
-
-
 
 .content-contacts {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between; 
-  
- /*   align-items: center; */
+
+      // Медиа запрос для планшетов и выше //
+
+      @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;   
+    }
+
 }
 
 .contacts-address {
-   /* padding-bottom: 100px; */
-    width: 500px;    
-    padding-top: 20px; 
-    position: relative; 
-    z-index: 2;
-   
+    
+margin-bottom: 50px;
+    // Медиа запрос для планшетов и выше //
+
+    @media (min-width: 768px) {
+        width: 290px;
+        margin-bottom: 0;
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        margin-bottom: 0;
+        width: 500px;    
+        padding-top: 20px; 
+        position: relative; 
+        z-index: 2;
+    }
+
 }
 
-
 .contacts-address::before {
+    display: none;
+      // Медиа запрос для планшетов и выше //
+
+      @media (min-width: 768px) {
+
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {      
     position: absolute;
     content: "";
     top: 0;
@@ -85,38 +189,60 @@
     background-size: auto;
     z-index: -1;
 }
-
-/*
-
-.contscts-form {
-    max-width: 555px;
-    padding-left: 20px;
-    padding-right: 20px;
-     
-}*/
+}
 
 .text-contacts {
-    font-size: 20px;
+    font-size: 16px;
     color: var(--text);
-    line-height: 1.6;
+    line-height: 26px;
     text-align: left;
-    margin-bottom: 40px;
+    font-weight: 400px;
+    margin-bottom: 25px;   
     
+      // Медиа запрос для планшетов и выше //
+
+      @media (min-width: 768px) {
+       font-size: 18px;
+       line-height: 28px;
+       margin-bottom: 30px;
+    }
     
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        font-size: 20px;
+        color: var(--text);
+        line-height: 1.6;
+        text-align: left;
+        margin-bottom: 40px;  
+    }
+
 }
 
 .contacts-inner {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
+  /*  display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+    color: var(--text);    
+    margin-bottom: 50px;  */
+    margin-bottom: 33px;
+      // Медиа запрос для планшетов и выше //
 
-   /* align-items: center; */
-  
-    color: var(--text);
+      @media (min-width: 768px) {
+
+    }
     
-    margin-bottom: 50px;
-    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;   
+        color: var(--text);    
+        margin-bottom: 50px;   
+    }
+
 }
+
+
 .contacts-list {
     
 }
@@ -142,70 +268,113 @@
    
 }
 
-/*
-.contacts-form-wrapper {
-    max-width: 555px;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-*/
-
 .contacts-list-inform {
     text-align: left;
     li {
-        margin-bottom: 28px;
-        font-size: 20px;
+        margin-bottom: 17px;
+        font-size: 18px;
         color: rgb(150, 150, 157);
         line-height: 1.2;
+    }
 
+      // Медиа запрос для планшетов и выше //
+
+      @media (min-width: 768px) {
+        text-align: left;
+        li {
+            margin-bottom: 12px;
+            font-size: 20px;
+            color: rgb(150, 150, 157);
+            line-height: 1.2;
+        }
+
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        text-align: left;
+        li {
+            margin-bottom: 28px;
+            font-size: 20px;
+            color: rgb(150, 150, 157);
+            line-height: 1.2;
+    }
     }
 }
 
 .contacts-form {
-    width: 511px;  
+    width: 290px; 
     height: auto;    
-     border-color: rgb(234, 234, 234);
-     background-color: rgb(255, 255, 255);
+    border-color: rgb(234, 234, 234);
+    background-color: rgb(255, 255, 255);
     border-width: 1px;
     border-style: solid;
     border-color: rgb(234, 234, 234);
-     box-shadow: 0px 28px 100px 0px rgba(194, 219, 235, 1);
-     padding-top: 40px;
-     padding-bottom: 40px;
-     padding-left: 55px;
-    padding-right: 55px;
-    margin-right: 25px;
+    box-shadow: 0px 28px 100px 0px rgba(194, 219, 235, 1);
+   /* padding-top: 40px; */
+    padding-bottom: 33px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
     margin-left: auto;
-}
-/*
-.form {
-  
-    padding-top: 40px;
-    padding-bottom: 40px;
-   
-  
+
+      // Медиа запрос для планшетов и выше //
+
+      @media (min-width: 768px) {
+        width: 340px;
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 30px;
+        padding-right: 20px;
+        height: 100%;
+        padding-bottom: 45px;
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        width: 511px;  
+        height: auto;    
+        border-color: rgb(234, 234, 234);
+        background-color: rgb(255, 255, 255);
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(234, 234, 234);
+        box-shadow: 0px 28px 100px 0px rgba(194, 219, 235, 1);
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 55px;
+        padding-right: 55px;
+        margin-right: 25px;
+        margin-left: auto;
+    }
+
 }
 
-.form-block {
-    
-   padding-left: 30px;
-   padding-right: 30px;
-  }
-  */
-  /*
-  .form-title {
-    text-align: center;
-  }
-  */
   .form-item {
     position: relative;
     padding-top: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 14px;
+
+      // Медиа запрос для планшетов и выше //
+
+      @media (min-width: 768px) {
+        margin-bottom: 16px;
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        padding-top: 40px;
+        margin-bottom: 25px; 
+    }
+
   }
+
+
   
   label {
     position: absolute;
-    top: 43px;
+    top: 43px; 
+ 
     transition: top 0.5s;
   }
   
@@ -214,13 +383,9 @@
     display: block;
     width: 100%;   
     margin: auto;
-    border: none;
-   
+    border: none;   
     border-bottom: 1px solid #eaeaea; 
-  /*  background: no-repeat bottom, 50% calc(100% - 1px);
-    background-size: 0 100%, 100% 100%;
-    background-image: linear-gradient(0deg, #9c27b0 2px, rgba(156, 39, 176, 0) 0), linear-gradient(0deg, #ccc 1px, hsla(0, 0%, 82%, 0) 0); */
-  }
+}
   
   textarea {
     min-height: 100px;
@@ -242,6 +407,7 @@
   input:not(:placeholder-shown)+label,
   textarea:focus+label,
   textarea:not(:placeholder-shown)+label {
+    font-size: 14px;
     top: 10px;
     color: rgb(237, 150, 38);
   }
@@ -313,14 +479,35 @@ textarea {
 }
 
 .list-inform-item {
-   display: inline-block;
+   display: block;
    color: #000000;
-   font-size: 20px;
-   font-weight: 700;
-   width: 190px;
+   font-size: 18px;
+   font-weight: 700;   
    text-align: left;
+   margin-bottom: 5px;
+   // Медиа запрос для планшетов и выше //
+
+   @media (min-width: 768px) {
+
+}
+
+// Медиа запрос для декстопов //
+@media (min-width: 1200px) {
+    display: inline-block;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    width: 190px;
+    text-align: left; 
+    margin-bottom: 0;
+}
+
 }
 
 .inform-item-text {
     display: inline;
+}
+
+.form-item:last-child {
+    margin-bottom: 15px;
 }

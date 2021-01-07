@@ -1,6 +1,6 @@
 .footer {
     background-color: #6c7886;
-    padding-top: 25px;
+    padding-top: 35px;
     padding-bottom: 35px;
     color: #fff;   
     font-family: 'Roboto';
@@ -13,6 +13,25 @@
     p:last-child {
         margin-bottom: 0;
     } 
+
+    // Медиа запрос для планшетов и выше //
+
+    @media (min-width: 768px) {
+        padding-top: 36px;
+        padding-bottom: 43px;
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        background-color: #6c7886;
+        padding-top: 25px;
+        padding-bottom: 35px;
+        color: #fff;   
+        font-family: 'Roboto';
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 .footer-link {
@@ -32,6 +51,17 @@
     color: rgb(255, 255, 255);
     line-height: 1.2;
     margin-bottom: 18px;
+      // Медиа запрос для планшетов и выше //
+
+      @media (min-width: 768px) {
+        margin-bottom: 15px;
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        margin-bottom: 18px;
+    }
+
   
 }
 

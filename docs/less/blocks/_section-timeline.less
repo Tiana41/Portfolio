@@ -1,34 +1,32 @@
 .section-timeline {
-    max-width: 1600px; 
-    background-image: url(../img/BG/01.bg.jpg);
-    background-repeat: repeat-y;
-    background-position: center;
-    background-size: auto;
-    padding-top: 138px;
-    padding-bottom: 119px;
+    max-width: 320px; 
+    padding-top: 52px;
+    padding-bottom: 48px;
     font-family: 'Roboto';
     margin-left: auto;
     margin-right: auto; 
     background-color: #ffffff;
+    position: relative; 
+    overflow: hidden;
 
-    .header-title-second {                
+    .sections-title {                
         color: var(--text);        
-        font-size: 64px;
+        font-size: 38px;
         font-weight: 800;
         font-style: normal;
-        letter-spacing: 2.2px;
+        letter-spacing: 2.0px;
         line-height: normal;
         text-align: center;   
-        margin-bottom: 153px;     
+        margin-bottom: 53px;     
     }
 
     .line-bottom::after {
-        bottom: 10px;
-        left: -5px;
-        right: -5px;
-        height: 12px;         
+        bottom: 3px;
+        left: -2px;
+        right: -2px;
+        height: 12px;        
     }
-
+    
     p {
         margin-bottom: 15px;  
     }
@@ -36,17 +34,82 @@
     p:last-child {
         margin-bottom: 0;
     } 
+
+      // Медиа запрос для планшетов и выше //
+
+      @media (min-width: 768px) {
+        padding-top: 78px;
+        max-width: 768px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-image: url(../img/BG/03.bg.jpg);
+        background-repeat: repeat-y;
+        background-position: center;
+        background-size: auto;
+        
+        .sections-title {              
+            font-size: 52px;
+            font-weight: 800;             
+            margin-bottom: 157px;  
+            letter-spacing: 2.2px;  
+        }
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        max-width: 1600px;
+        background-image: url(../img/BG/01.bg.jpg);
+        background-repeat: repeat-y;
+        background-position: center;
+        background-size: auto;
+        padding-top: 138px;
+        padding-bottom: 120px;
+        font-family: 'Roboto';
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #ffffff;
+        padding-left: 0;
+        padding-right: 0;
+    
+        .sections-title {                
+            color: var(--text);        
+            font-size: 64px;
+            font-weight: 800;
+            font-style: normal;
+            letter-spacing: 2.2px;
+            line-height: normal;
+            text-align: center;   
+            margin-bottom: 153px;     
+        }
+    
+        .line-bottom::after {
+            bottom: 10px;
+            left: -5px;
+            right: -5px;
+            height: 12px;         
+        }
+        
+        p {
+            margin-bottom: 15px;  
+        }
+        
+        p:last-child {
+            margin-bottom: 0;
+        } 
+    
+    }
+
 }
 
 
 
 .content-time-line {
- /*  max-width: 1005px; */
+     
 }
 
 .timeline-block-item {
     position: relative;
-    width: 50%;    
+   /* width: 50%;  */
     padding-left: 98px;
     min-height: 182px;
     display: flex;  
@@ -58,38 +121,56 @@
         top: 90px;
         bottom: 0;
         left: 32px;
-     /*   height: 112px; */
         width: 4px;
         border-radius: 2px;
-        background-color: #e1eef4;  
+        background-color: #e1eef4; 
         
     }
- /*
+ 
     @media (min-width: 768px) {
-        width: 50%;
+       width: 50%; 
+     
     }
 
     @media (min-width: 1200px) {
-        width: 100%;
-    } */
+        position: relative;
+        width: 50%;
+        padding-left: 98px;
+        min-height: 182px;
+        display: flex;
+    } 
 }
 
 
 
 .timeline-block-item:first-child::before {
-    position: absolute;
-    content: "";
-    right: -5px;
-    top: -74px;
-    bottom: 0px;   
-    height: 57px;
-    width: 4px;
-    border-radius: 2px;
-    background-color: #e1eef4;  
+   display: none;
+
+      // Медиа запрос для планшетов и выше //
+
+      @media (min-width: 768px) {
+         display: block;
+        position: absolute;
+        content: "";
+        right: -5px;
+        top: -74px;
+        bottom: 0px;   
+        height: 57px;
+        width: 4px;
+        border-radius: 2px;
+        background-color: #e1eef4;  
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        
+    }
+
 }
 
 
 .timeline-block-item:nth-child(even) {
+   
     @media (min-width: 768px) {
         margin-left: auto;
 
@@ -106,9 +187,12 @@
             right: auto;       
         }       
     }
+
+ 
 }
 
 .timeline-block-item:nth-child(odd) {
+   
     @media (min-width: 768px) {
         padding-left: 0;
         padding-right: 80px;
@@ -123,7 +207,7 @@
           right: -37px; 
        
        }
-    }
+    }    
 }
 
 .timeline-block-item:nth-child(odd):last-child:after {
@@ -133,16 +217,40 @@
 
 .timeline-block-item + .timeline-block-item {
     margin-top: 50px;
+
+    // Медиа запрос для планшетов и выше //
+
+    @media (min-width: 768px) {
+        margin-top: 35px;
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        margin-top: 50px;
+    }
+
 }
 
 .timeline-item-text {
-   
-    font-size: 18px;
+    
+    font-size: 14px;
     font-weight: 500;
     font-style: normal;
     letter-spacing: normal;
     line-height: normal;
-    padding-top: 18px;
+   
+    // Медиа запрос для планшетов и выше //
+
+    @media (min-width: 768px) {
+        font-size: 16px;
+        padding-top: 18px;
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        
+    }
+
   
 }
   
@@ -162,11 +270,10 @@
 }
 
 
-
-
 .title-little {
+    max-width: 178px;
     color: var(--text);    
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 900;
     font-style: normal;
     letter-spacing: normal;
@@ -174,43 +281,38 @@
     margin-bottom: 10px;
 
     .line-bottom::after {
-        bottom: 5px;
-        left: 0;
-        right: 0;
-        height: 6px;         
-    }   
+        display: none;    
+    }
+   
+
+    // Медиа запрос для планшетов и выше //
+
+    @media (min-width: 768px) {
+        max-width: unset;
+        font-size: 24px;
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        font-size: 26px;
+
+           .line-bottom::after {
+            bottom: 5px;
+            left: 0;
+            right: 0;
+            height: 6px;         
+        }   
+    }
+
 }
 
+.timeline-block-item .title-little {
 
-
-    /*
-
-        .show-1 {
-            animation-delay: 3s;
-        }
-
-        .show-2 {
-            animation-delay: 4s;
-        }
-
-        .show-3 {
-            animation-delay: 5s;
-        }
-
-        .show-4 {
-           animation-delay: 6s;
-        }
-
-        .show-5 {          
-          animation-delay: 6.5s;
-        }
-
-  */
-     .timeline-block-item .title-little {
-         display: inline-block;
+    @media (min-width: 1200px) {
+            display: inline-block;
             position: relative;
             color: var(--text);    
-            font-size: 26px;
+           /* font-size: 26px; */
             font-weight: 900;
             font-style: normal;
             letter-spacing: normal;
@@ -226,12 +328,11 @@
                 bottom: 0;
                 height: 5px;
                 width: 0;
-             /*   background-color:rgb(144, 182, 223); */
-             background-color: rgba(56, 102, 150, 0.7);
+                background-color: rgba(56, 102, 150, 0.7);
                 z-index: -1;
                 transition: 1s ease;
             }
-        }  
+        
         .timeline-block-item:hover {
             cursor: pointer;
             .title-little{
@@ -243,4 +344,52 @@
                display: none;        
             } 
         } 
-        }
+    }
+ }
+} 
+
+
+  strong {
+            // Медиа запрос для планшетов и выше //
+
+    @media (min-width: 768px) {
+        font-size: 18px;
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        
+    }
+  }
+
+  .timeline-item-text-mobile {
+      display: block;
+      // Медиа запрос для планшетов и выше //
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        
+    }
+
+  }
+ 
+  .dekstop-class {
+    
+    display: none;
+    // Медиа запрос для планшетов и выше //
+
+  @media (min-width: 768px) {
+      display: block;
+  }
+  
+  // Медиа запрос для декстопов //
+  @media (min-width: 1200px) {
+      
+  }
+
+}
+ 

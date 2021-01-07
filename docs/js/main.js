@@ -1,21 +1,36 @@
 $(document).ready(function () {
-    /*
+
+    // Подключение точек пагинации справа page-nav
+	$('#page-nav').onePageNav({
+		currentClass: 'active',
+		changeHash: false,
+		scrollSpeed: 750,
+		scrollThreshold: 0.5,
+		filter: '',
+		easing: 'swing',
+		begin: function () {},
+		end: function () {},
+		scrollChange: function ($currentListItem) {}
+	});
+    
+    
  //моб меню
  const toggleMenu = document.querySelector('.toggle-menu'); //иконка гамбургер
  const mobMenu = document.querySelector('.mobile-menu'); //mob menu
  const overlay = document.querySelector('#overlay'); //overlay
- const bodyEl = document.body;
+ const bodyEl = document.body; 
 
 
  //прослушиваем событие клик по гамбургеру
  toggleMenu.addEventListener('click', function(){
 
-     this.classList.toggle('active');
-     mobMenu.classList.toggle('active');
-     overlay.classList.toggle('active');
-     bodyEl.classList.toggle('noscroll');
+    this.classList.toggle('active');
+    mobMenu.classList.toggle('active');
+    overlay.classList.toggle('active');
+    bodyEl.classList.toggle('noscroll'); 
  });
 
+ 
  //прослушиваем событие клик моб меню
  mobMenu.addEventListener('click', function(){
      this.classList.remove('active');
@@ -23,7 +38,8 @@ $(document).ready(function () {
      overlay.classList.remove('active');
      bodyEl.classList.remove('noscroll');
 
- }); */
+ }); 
+
  //-фильтрация проектов
  let containerEl = document.querySelector('#projects');
 
@@ -71,7 +87,7 @@ $('.contact-form').validate({
         let string = $(".contact-form").serialize();
         $.ajax({
             type: "POST",
-            url: "php/mail.php",
+            url: "php/mail.php", 
             data: string,
 
             success: function (html) {
@@ -82,8 +98,9 @@ $('.contact-form').validate({
         return false;
 
     }
-
-
 })
+
+
+
 
 

@@ -1,19 +1,53 @@
 .section-portfolio {   
  /*   max-width: 1600px;  */
-    padding-top: 104px;
-    padding-bottom: 63px;
+     padding-top: 52px;
+     padding-bottom: 132px;
     background-color: #f4f8f9;
     font-family: 'Roboto';
     margin-left: auto;
     margin-right: auto;
 
-    .header-title-second {
+    .sections-title {
         color: #000000;
-        font-size: 64px;
+        font-size: 42px;
         font-weight: 800;
-        margin-bottom: 58px;
+        margin-bottom: 44px;
        letter-spacing: 2.0px;
     }
+
+      // Медиа запрос для планшетов и выше //
+
+      @media (min-width: 768px) {
+          padding-top: 70px;
+          padding-left: 15px;
+          padding-right: 15px;
+          padding-bottom: 106px;
+        .sections-title {
+            font-size: 52px;
+            margin-bottom: 50px;
+        }
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        padding-top: 104px;
+        padding-bottom: 57px;
+        background-color: #f4f8f9;
+        font-family: 'Roboto';
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+
+        .sections-title {
+            color: #000000;
+            font-size: 64px;
+            font-weight: 800;
+            margin-bottom: 58px;
+           letter-spacing: 2.0px;
+        }
+    }
+
  
 }
 
@@ -26,7 +60,7 @@
 }
 
 .project-cards {
-    max-width: 360px;
+    max-width: 290px;
     height: auto; 
     display: block;
     transition: 0.7s ease;
@@ -34,24 +68,140 @@
     box-shadow: 0 4px 8px #c4d3e4; 
     border-style: solid;    
     border-color: rgba(196, 211, 228, 0.9);   
-   margin-bottom: 62px;
+    margin-bottom: 30px;
 
     .title-medium {
         display: inline-block;
-        font-size: 26px;
+        font-size: 22px;
         font-weight: 700;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         }    
 
     .text-portfolio {    
-        font-size: 20px; 
+        font-size: 16px; 
         margin-bottom: 4px;        
     }  
+
+    img {
+        height: 200px;
+    }
+
+      // Медиа запрос для планшетов и выше //
+
+      @media (min-width: 768px) {
+        max-width: 338px;
+        .title-medium {
+            display: inline-block;
+            font-size: 24px;
+            font-weight: 700;   
+            margin-bottom: 5px;
+            letter-spacing: normal;
+
+           }
+          .text-portfolio {    
+            
+            line-height: 1.2;
+            font-size: 18px;
+            font-weight: 300;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: left;    
+            color: #000;
+           }
+
+          img {
+              height: 240px;
+          }
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        max-width: 360px;
+        height: auto; 
+        display: block;
+        transition: 0.7s ease;
+        cursor: pointer;
+        box-shadow: 0 4px 8px #c4d3e4; 
+        border-style: solid;    
+        border-color: rgba(196, 211, 228, 0.9);   
+       margin-bottom: 62px;
+    
+        .title-medium {
+            display: inline-block;
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            }    
+    
+        .text-portfolio {    
+            font-size: 20px; 
+            margin-bottom: 4px;        
+        }  
+    }
 
 
 }
 .card-big {
    
+    
+    max-width: 290px;
+    /*background-color: bisque; */
+    display: block;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: #000;
+    height: auto;
+      
+
+    .title-medium {
+        display: inline-block;
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        }    
+
+    .text-portfolio {    
+        font-size: 16px; 
+        margin-bottom: 4px;    
+    } 
+      // Медиа запрос для планшетов и выше //
+
+      @media (min-width: 768px) {
+          
+        max-width: 338px;
+        margin-bottom: 38px;
+
+         .title-medium {
+            display: inline-block;
+            font-size: 24px;
+            font-weight: 700;   
+            margin-bottom: 5px;
+            letter-spacing: normal;
+
+           }
+          .text-portfolio {    
+            
+            line-height: 1.2;
+            font-size: 18px;
+            font-weight: 300;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: left;    
+            color: #000;
+           }
+
+        img {
+            max-width: 100%;
+            height: 240px;
+            vertical-align: middle;
+        } 
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        
     max-width: 560px;
     /*background-color: bisque; */
     display: block;
@@ -61,29 +211,28 @@
     height: auto;
       
 
-   .title-medium {
-    display: inline-block;
+    .title-medium {
+        display: inline-block;
         font-size: 32px;      
         margin-bottom: 10px;
    }
-   .text-portfolio {    
-    font-size: 24px;
-    line-height: 1.2;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
-    text-align: left;    
-    color: #000;
-    
+    .text-portfolio {    
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;    
+        color: #000;
+    }
+    img {
+        max-width: 100%;
+        height: 100%;
+        vertical-align: middle;
+    } 
+
 }
-
-img {
-    max-width: 100%;
-    height: 100%;
-    vertical-align: middle;
-} 
-
 }
 
 .project-cards .title-medium {
@@ -115,12 +264,27 @@ img {
 
 
 .portfolio-works-togger {
-    display: flex;
-   
-    justify-content: flex-start;
-    margin-right: 84px;
-    margin-bottom: 50px;
-    text-align: left;
+    display: none;
+      // Медиа запрос для планшетов и выше //
+
+      @media (min-width: 768px) {
+        margin-right: 0;
+        display: flex;   
+        justify-content: flex-start;
+       
+        margin-bottom: 47px;
+        text-align: left;
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        display: flex;   
+        justify-content: flex-start;
+        margin-right: 84px;
+        margin-bottom: 50px;
+        text-align: left;
+    }
+
 }
 
 .portfolio-works-togger_item {
@@ -128,71 +292,183 @@ img {
     margin-right: 85px;
     font-size: 28px;
     font-weight: 700;
-    font-style: normal;
-  
+    font-style: normal;  
     line-height: normal;
     text-align: left;
-   cursor: pointer;
+    cursor: pointer;
+
+    &:hover, &:active {
+      color: #9290B0;
+    }
+
+     // Медиа запрос для планшетов и выше //
+
+     @media (min-width: 768px) {
+        font-size: 24px;
+        font-weight: 700;
+        margin-right: 55px;
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        font-size: 28px;
+        font-weight: 700;
+        margin-right: 85px;
+    }
    
 }
 
 .control-active {
     color: #000000;  
-    font-weight: 700;
+    font-weight: 900;
+
+    // Медиа запрос для планшетов и выше //
+
+    @media (min-width: 768px) {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        font-weight: 700;
+        font-size: 28px;
+    }
+
 }
 
 .project-link {
     display: block;
     position: relative;
     transition: 3s;
-   z-index: 1;
-   margin-bottom: 26px;
+    z-index: 1;
+    margin-bottom: 25px;
+
+        // Медиа запрос для планшетов и выше //
+
+        @media (min-width: 768px) {
+            margin-bottom: 20px;
+            &:after {
+                content: "";
+                position: absolute; 
+                left: 0;
+                bottom: 0;
+                top: 0;
+                right: 0;
+                left: 0;
+                width: 0;
+                background-color: rgba(171, 200, 231, 0.9);
+                z-index: 1;
+                transition: 1s ease;            
+            }
+        }
+        
+        // Медиа запрос для декстопов //
+        @media (min-width: 1200px) {
+            display: block;
+            position: relative;
+            transition: 3s;
+            z-index: 1;
+            margin-bottom: 26px;
+
+            &:after {
+                content: "";
+                position: absolute; 
+                left: 0;
+                bottom: 0;
+                top: 0;
+                right: 0;
+                left: 0;
+                width: 0;
+                background-color: rgba(171, 200, 231, 0.9);
+                z-index: 1;
+                transition: 1s ease;
+            
+            }
+        }
+
+
 
    .button {  
-       background-color: #ffffff;
-    display: none;
-    font-weight: 800;
-    color: #464646;
-   } 
+    
+   display: none;
+      // Медиа запрос для планшетов и выше //
 
-&:after {
-    content: "";
-    position: absolute; 
-    left: 0;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    left: 0;
-   width: 0;
-  /*  background-color:rgba(125, 171, 221, 0.9); */
-  background-color: rgba(171, 200, 231, 0.9);
-    z-index: 1;
-    transition: 1s ease;
-   
-}
+      @media (min-width: 768px) {
+        display: none;
+        height: 64px;
+        line-height: 64px;    
+        border-radius: 31px;       
+        color: #464646;    
+        font-size: 22px;
+        font-weight: 800;    
+        letter-spacing: normal;    
+        text-align: center;
+        padding-left: 42px;
+        padding-right: 42px;
+        margin-right: 19px;
+        transition: 0.2s ease;
+        background-color: #ffffff;
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        background-color: #ffffff;
+        display: none;
+        font-weight: 800;
+        color: #464646; 
+    }
+
+} 
 }  
- 
+
+
 .project-link:hover {
+      // Медиа запрос для планшетов и выше //
+
+      @media (min-width: 768px) {
+        
+       .button {
+        display: inline-block;
+        position: absolute;
+        border-radius: 31px;
+        top: 50%;
+        left: 50%;       
+        transform: translate(-50%, -50%);
+        z-index: 3;     
+    }
+   
+    &:after {
+        width: 100%;
+    }
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        
+    }
 
        .button {
         display: inline-block;
         position: absolute;
+        border-radius: 31px;
         top: 50%;
         left: 50%;       
         transform: translate(-50%, -50%);
-        z-index: 3;
-       
-      
-       }
+        z-index: 3;     
+    }
    
     &:after {
         width: 100%;
     }
 }
 
-.project-link {
-
+.project-link {  
     .button {
+          // Медиа запрос для планшетов и выше //
+
+    @media (min-width: 768px) {
+        
         transition: 1s ease;
         border: 1px;
         border-color: #ffffff;
@@ -206,11 +482,75 @@ img {
  &:active{
     background-color: #FFCFB7;
  } 
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        
+    
+
+        transition: 1s ease;
+        border: 1px;
+        border-color: #ffffff;
+        border-style: solid;
+    &:hover { 
+        background-color: #FFE5D8;
+        box-shadow: 0 2px 6px rgba(136, 154, 172, 0.6);        
+        border-color: #889aac99; 
+    }
+
+ &:active{
+    background-color: #FFCFB7;
+ } 
+}
 } 
 }
 
 .text-portfolio-wrap {
     padding-left: 10px;
     padding-bottom: 6px;
+
+      // Медиа запрос для планшетов и выше //
+
+      @media (min-width: 768px) {
+        padding-left: 10px;
+        padding-bottom: 6px;
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        padding-left: 5px;
+        padding-bottom: 4px;   
+    }
+
+}
+
+.last-card {
+
+      // Медиа запрос для планшетов и выше //
+
+      @media (min-width: 768px) {
+        display: none;
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        display: block;
+    }
+
+}
+
+br {
+    // Медиа запрос для планшетов и выше //
+
+@media (min-width: 768px) {
+
+}
+
+// Медиа запрос для декстопов //
+@media (min-width: 1200px) {
+    display: none;
+}
+
 }
 

@@ -15,7 +15,30 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="seaction-header">
+    <ul id="page-nav">
+      <li class="active">
+        <a href="#header"></a>
+      </li>
+      <li>
+        <a href="#portfilio"></a>
+      </li>
+      <li>
+        <a href="#works"></a>
+      </li>
+      <li>
+        <a href="#timeline"></a>
+      </li>  
+      <li>
+        <a href="#contacts"></a>
+      </li>      
+    </ul>
+
+    <div id="overlay"></div>
+    <div class="mobile-menu">
+
+    </div>
+
+    <header class="seaction-header" id="header">
       <div class="header-navigation">
         <div class="header-container">
           <div class="logo">
@@ -23,11 +46,11 @@
           </div>
 
           <nav class="header-contacts">
-            <a href="#" class="header-link"> Главная </a>
+            <a href="#header" class="header-link"> Главная </a>
 
-            <a href="#" class="header-link"> Работы </a>
+            <a href="#works" class="header-link"> Работы </a>
 
-            <a href="#" class="header-link"> Контакты </a>
+            <a href="#contacts" class="header-link"> Контакты </a>
           </nav>
 
           <nav class="header-icons">
@@ -92,6 +115,9 @@
               </svg>
             </a>
           </nav>
+          <button class="toggle-menu">
+            <span></span>
+          </button>
         </div>
       </div>
 
@@ -107,10 +133,11 @@
               Верстальщик сайтов, веб-разработчик. <br />
               Оперативная верстка. Работаю с <br />
               соблюдением сроков и выполнением ТЗ.
+
             </p>
             <div class="header-buttons">
               <a class="button" href="#">Познакомиться</a>
-              <a class="button light" href="#">Контакты</a>
+              <a class="button light" href="#contacts">Контакты</a>
             </div>
           </div>
 
@@ -130,14 +157,23 @@
             <h3 class="title-medium">Что я умею:</h3>
             <ul class="list-content">
               <li class="list-text">
-                pixel perfect, полное соответствие макету.
+                <span class="letter-big">Pixel</span>
+                <span class="letter-little">pixel</span> perfect, полное соответствие макету.              
               </li>
-              <li class="list-text">верстаю с сеткой или без.</li>
-              <li class="list-text">адаптивная верстка под мобильные устройства.</li>
-              <li class="list-text">оптимизация по retina экраны</li>
-              <li class="list-text">с Bootstrap и без него.</li>
+              <li class="list-text">
+                <span class="letter-big">Верстаю</span>
+                <span class="letter-little">верстаю</span> с сеткой или без.</li>
+              <li class="list-text">
+                <span class="letter-big">Адаптивная</span>
+                <span class="letter-little">адаптивная</span> верстка под мобильные устройства.</li>
+              <li class="list-text">
+                <span class="letter-big">Оптимизация</span>
+                <span class="letter-little">оптимизация</span> по retina экраны</li>
+              <li class="list-text">
+                <span class="letter-big">С</span>
+                <span class="letter-little">с</span> Bootstrap и без него.</li>
             </ul>
-            <a class="button" href="#">Смотреть работы</a>
+            <a class="button" href="#works">Смотреть работы</a>
           </div>
 
           <div class="header-social-icons">
@@ -249,11 +285,11 @@
         </div>
       </div>
     </header>
-
-    <section class="section-portfolio">
+    <main>
+    <section class="section-portfolio" id="works">
       <div class="container">
         
-          <h2 class="header-title-second">
+          <h2 class="sections-title">
             <span class="line-bottom">Портфолио</span>
           </h2>
         
@@ -308,7 +344,8 @@
                 <button class="button anim-show">Смотреть проект</button>
               </a>
               <div class="text-portfolio-wrap">
-              <h3 class="title-medium">Сайт "ЮНИТ"</h3>
+              <h3 class="title-medium">Сайт  <br>
+                "ЮНИТ"</h3>
               <p class="text-portfolio">Верстка лендинга.</p>
             </div>
             </div>
@@ -343,7 +380,7 @@
             </div>
             </div>
 
-            <div class="project-cards mix frontend">
+            <div class="project-cards last-card mix frontend">
               <a href="" target="_blank" class="project-link">
                 <img
                   class="project-cards-img"
@@ -362,16 +399,16 @@
       </div>
     </section>
 
-    <section class="section-timeline">
+    <section class="section-timeline" id="timeline">
       <div class="container">
        
-          <h2 class="header-title-second">
+          <h2 class="sections-title">
             <span class="line-bottom"> Как я работаю</span>
           </h2>
         
         <div class="content-time-line">      
           <div class="timeline-block-item">
-            <div class="timeline-item-text" data-aos="fade-right" data-aos-offset="400" data-aos-delay="300" data-aos-duration="2000"> 
+            <div class="timeline-item-text dekstop-class" data-aos="fade-right" data-aos-offset="400" data-aos-delay="300" data-aos-duration="2000"> 
               <h4 class="title-little">
                 <span class="line-bottom"> Оцениваю макет </span>
               </h4>
@@ -380,6 +417,18 @@
                 <strong> Время: 2 - 4 часа </strong>
               </p>
             </div>
+
+            <div class="timeline-item-text-mobile" data-aos="fade-left" data-aos-offset="400" data-aos-delay="300" data-aos-duration="2000"> 
+              <h4 class="title-little">
+                <span class="line-bottom"> Оцениваю макет </span>
+              </h4>
+              <p>Оцениваю объем работы, сложность, нюансы. Задаю вопросы.</p>
+              <p>
+                <strong> Время: 2 - 4 часа </strong>
+              </p>
+            </div>
+
+
             <div class="timeline-item-icon">
               <img src="./img/svg/layers.png" alt="" />
             </div>
@@ -402,7 +451,7 @@
             </div>
           </div>
           <div class="timeline-block-item">
-            <div class="timeline-item-text" data-aos="fade-right" data-aos-offset="400" data-aos-delay="900" data-aos-duration="2000">
+            <div class="timeline-item-text dekstop-class" data-aos="fade-right" data-aos-offset="400" data-aos-delay="900" data-aos-duration="2000">
               <h4 class="title-little">
                 <span class="line-bottom"> Вы держите руку на пульсе </span>
               </h4>
@@ -415,6 +464,21 @@
                 <strong> Время 2 часа </strong>
               </p>
             </div>
+
+            <div class="timeline-item-text-mobile" data-aos="fade-left" data-aos-offset="400" data-aos-delay="900" data-aos-duration="2000">
+              <h4 class="title-little">
+                <span class="line-bottom"> Вы держите руку на пульсе </span>
+              </h4>
+              <p>
+                Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в
+                любое время можете видеть актуальное состояние проекта и задач.
+              </p>
+
+              <p>
+                <strong> Время 2 часа </strong>
+              </p>
+            </div>
+
             <div class="timeline-item-icon">
               <img src="./img/svg/24-hours.png" alt="" />
             </div>
@@ -438,7 +502,7 @@
             </div>
           </div>
           <div class="timeline-block-item">
-            <div class="timeline-item-text" data-aos="fade-right" data-aos-delay="1500" data-aos-duration="2000">
+            <div class="timeline-item-text dekstop-class" data-aos="fade-right" data-aos-delay="1500" data-aos-duration="2000">
               <h4 class="title-little">
                 <span class="line-bottom"> Финальное ревью проекта </span>
               </h4>
@@ -451,6 +515,22 @@
                 <strong> Время: 2 - 4 часа </strong>
               </p>
             </div>
+
+            <div class="timeline-item-text-mobile" data-aos="fade-left" data-aos-delay="1500" data-aos-duration="2000">
+              <h4 class="title-little">
+                <span class="line-bottom"> Финальное ревью проекта </span>
+              </h4>
+              <p>
+                Проект готов. Финальное ревью и полировка до идеального
+                состояния. Передаю файлы проекта, заливаю сайт на хостинг
+                заказчика.
+              </p>
+              <p>
+                <strong> Время: 2 - 4 часа </strong>
+              </p>
+            </div>
+
+
             <div class="timeline-item-icon">
               <img src="./img/svg/diamond.png" alt="" />
             </div>
@@ -459,10 +539,10 @@
       </div>
     </section>
 
-    <section class="section-contacts">
+    <section class="section-contacts" id="contacts">
       <div class="container">
         
-          <h2 class="header-title-second">
+          <h2 class="sections-title">
             <span class="line-bottom">Контакты</span>            
           </h2>
         
@@ -606,15 +686,11 @@
               </svg>
             </a>
           </div>       
-        </div>
-
-        
+        </div>    
        
 
-          <div class="contacts-form">
-           
-              <form class="contact-form" action="">
-              
+          <div class="contacts-form">           
+              <form class="contact-form" action="">              
                 <div class="form-item">
                   <input class="form-field" name="email" id="form-mail" type="email" placeholder=".info_somemail_com " required></input>
                   <label class="form-text" for="form-mail">Ваш_Email </label>
@@ -624,28 +700,18 @@
                   <label class="form-text" for="subject">Тема письма</label>
                 </div>
                 <div class="form-item">
-                  <textarea class="form-field" name="text" id="text-forms" type="text" placeholder="В свободном формате"></textarea>
-                 
+                     
+                  <textarea class="form-field" name="text" id="text-forms" type="text" placeholder="В свободном формате"></textarea>          
                   <label class="form-text" for="text-forms">Сообщение</label>
                 </div>                        
-                <button class="button" type="submit">Отправить</button>           
-              
-              </form>
-              <div id="answer"></div> 
-                     
-
-          </div>
-        
-
-
-       </div>
-
-
-
+                <button class="button" type="submit">Отправить</button>          
+               </form>
+              <div id="answer"></div>                  
+           </div>   
+        </div>
       </div>
-
     </section>
-
+  </main>
     <footer class="footer">
       <div class="container">
      <div class="footer-copyright-name">
@@ -667,13 +733,14 @@
 
     </footer>
 
-    <script src="libs/jquery/jquery-3.0.0.min.js"></script>
+    <script src="libs/jquery/jquery-3.0.0.min.js"></script>    
     <script src="libs/mixitup3/mixitup.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
     <script src="libs/jquery.validate/jquery.validate.js"></script>
+    <script src="libs/nav.js/nav.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
