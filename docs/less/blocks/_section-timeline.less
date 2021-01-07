@@ -42,6 +42,7 @@
         max-width: 768px;
         padding-left: 15px;
         padding-right: 15px;
+        padding-bottom: 75px;
         background-image: url(../img/BG/03.bg.jpg);
         background-repeat: repeat-y;
         background-position: center;
@@ -58,12 +59,12 @@
     // Медиа запрос для декстопов //
     @media (min-width: 1200px) {
         max-width: 1600px;
-        background-image: url(../img/BG/01.bg.jpg);
+        background-image: url(../img/BG/03.bg.jpg);
         background-repeat: repeat-y;
         background-position: center;
         background-size: auto;
         padding-top: 138px;
-        padding-bottom: 120px;
+        padding-bottom: 107px;
         font-family: 'Roboto';
         margin-left: auto;
         margin-right: auto;
@@ -104,7 +105,21 @@
 
 
 .content-time-line {
-     
+  max-width: 1005px;   
+  margin: 0 auto; 
+    // Медиа запрос для планшетов и выше //
+
+    @media (min-width: 768px) {
+     /*   max-width: 600px;  */ 
+        margin: 0 auto; 
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+        max-width: 1005px;   
+        margin: 0 auto; 
+    }
+
 }
 
 .timeline-block-item {
@@ -129,7 +144,7 @@
  
     @media (min-width: 768px) {
        width: 50%; 
-     
+       padding-left: 98px;
     }
 
     @media (min-width: 1200px) {
@@ -175,6 +190,23 @@
         margin-left: auto;
 
         padding-right: 0;
+        padding-left: 70px;
+      
+        &::after {
+           left: 0; 
+            right: auto;
+        }
+
+        .timeline-item-icon {
+            left: -37px;     
+            right: auto;       
+        }       
+    }
+
+    @media (min-width: 1200px) {
+        margin-left: auto;
+
+        padding-right: 0;
         padding-left: 80px;
       
         &::after {
@@ -195,6 +227,21 @@
    
     @media (min-width: 768px) {
         padding-left: 0;
+        padding-right: 70px;
+        text-align: right; 
+
+        &::after {
+            left: auto;
+            right: -5px;
+        }
+       .timeline-item-icon {
+           left: auto;
+          right: -37px;        
+       }
+    }  
+    
+    @media (min-width: 1200px) {
+        padding-left: 0;
         padding-right: 80px;
         text-align: right; 
 
@@ -204,8 +251,7 @@
         }
        .timeline-item-icon {
            left: auto;
-          right: -37px; 
-       
+          right: -37px;        
        }
     }    
 }
@@ -231,8 +277,7 @@
 
 }
 
-.timeline-item-text {
-    
+.timeline-item-text {    
     font-size: 14px;
     font-weight: 500;
     font-style: normal;
@@ -242,16 +287,17 @@
     // Медиа запрос для планшетов и выше //
 
     @media (min-width: 768px) {
-        font-size: 16px;
-        padding-top: 18px;
+        font-size: 16px;       
+      /*  line-height: 22px; */
+        padding-top: 21px;
+        letter-spacing: 1.0px;
     }
     
     // Медиа запрос для декстопов //
     @media (min-width: 1200px) {
-        
-    }
-
-  
+        font-size: 18px;   
+        padding-top: 18px;   
+    }  
 }
   
 .timeline-item-icon {
@@ -290,6 +336,7 @@
     @media (min-width: 768px) {
         max-width: unset;
         font-size: 24px;
+        letter-spacing: 1.1px;
     }
     
     // Медиа запрос для декстопов //
@@ -297,6 +344,7 @@
         font-size: 26px;
 
            .line-bottom::after {
+            display: block;
             bottom: 5px;
             left: 0;
             right: 0;
@@ -333,21 +381,22 @@
                 transition: 1s ease;
             }
         
-        .timeline-block-item:hover {
-            cursor: pointer;
-            .title-little{
-            &:after {
-                width: 100%;
-            }
-
-            .line-bottom::after {
-               display: none;        
-            } 
-        } 
-    }
+ 
  }
 } 
 
+.timeline-block-item:hover {
+    cursor: pointer;
+    .title-little{
+    &:after {
+        width: 100%;
+    }
+
+    .line-bottom::after {
+       display: none;        
+    } 
+} 
+}
 
   strong {
             // Медиа запрос для планшетов и выше //
