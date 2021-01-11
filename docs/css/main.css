@@ -272,6 +272,9 @@ li::selection {
 p::selection {
   background: #FFEFD8;
 }
+span::selection {
+  background: #FFEFD8;
+}
 .link-style {
   text-shadow: 0 3px 42px #ffffff;
   color: #000000;
