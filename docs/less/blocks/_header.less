@@ -28,11 +28,7 @@
         background-position: center;
         background-size: auto;
         padding-top: 70px;
-        color: #fff;
         padding-bottom: 240px;
-        font-family: 'Roboto';
-        margin-left: auto;
-        margin-right: auto;
         overflow: hidden;
 
         .button {
@@ -58,10 +54,6 @@
     // Медиа запрос для декстопов //
     @media (min-width: 1200px) {
         margin-bottom: 152px;
-        position: relative; 
-        z-index: 10;
-        padding-left: 15px;
-        padding-right: 15px;
     }
 
 }
@@ -76,18 +68,6 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-
-    // Медиа запрос для планшетов и выше //
-
-    @media (min-width: 768px) {
-
-    }
-    
-    // Медиа запрос для декстопов //
-    @media (min-width: 768px) {
-        
-    }
-
 }
 
 
@@ -97,49 +77,17 @@
    font-weight: 900;
    color: #000000;      
    letter-spacing: 1.2px;
-
-     // Медиа запрос для планшетов и выше //
-
-     @media (min-width: 768px) {
-
-    }
-    
-    // Медиа запрос для декстопов //
-    @media (min-width: 768px) {
-        
-    }
-
 }
 
 .header-logo {
     position: relative;
-    z-index: 2;
+    z-index: 2; 
     font-size: 42px;
     text-decoration: uppercase;
     font-weight: 900;
     color: #000000;
     line-height: 1.2;
-    letter-spacing: 1.2px;
-
-      // Медиа запрос для планшетов и выше //
-
-      @media (min-width: 768px) {
-        font-size: 42px;
-    }
-    
-    // Медиа запрос для декстопов //
-    @media (min-width: 1200px) {
-        position: relative;
-        z-index: 2;
-        font-size: 42px;
-        text-decoration: uppercase;
-        font-weight: 900;
-        color: #000000;
-        line-height: 1.2;
-        letter-spacing: 1.2px;
-    }
-
-    
+    letter-spacing: 1.2px;   
 }
 
 
@@ -204,18 +152,6 @@
     line-height: 1.2;
     z-index: 2;  
     letter-spacing: 1px;
-
-      // Медиа запрос для планшетов и выше //
-
-      @media (min-width: 768px) {
-
-    }
-    
-    // Медиа запрос для декстопов //
-    @media (min-width: 1200px) {
-        
-    }
-
 }
 
 .header-link:last-child {
@@ -232,20 +168,7 @@
     background-color: rgba(56, 102, 150, 0.4);
     transition: 0.5s;
     z-index: -1;
-
-      // Медиа запрос для планшетов и выше //
-
-      @media (min-width: 768px) {
-
-    }
-    
-    // Медиа запрос для декстопов //
-    @media (min-width: 1200px) {
-        
-    }
-
-
- } 
+} 
 
 .header-link:hover:after {
     width: 110%;
@@ -410,11 +333,9 @@
     
     // Медиа запрос для декстопов //
     @media (min-width: 1200px) {
-        font-family: 'Roboto', sans-serif;
-        color: #000000;    
+         
         font-size: 90px;
         font-weight: 800;
-        text-align: left;
         line-height: normal;
         margin-bottom: 12px;
     }
@@ -458,16 +379,11 @@
     }
     
     // Медиа запрос для декстопов //
-    @media (min-width: 1200px) {
-        color: #000000;    
-        text-shadow: 0 3px 42px #ffffff;
-        color: #393f47;   
+    @media (min-width: 1200px) {      
+        
         font-size: 24px;
-        font-weight: 500;
-        font-style: normal;
-        letter-spacing: normal;
+        font-weight: 500;        
         line-height: 36px;
-        text-align: left;
         margin-bottom: 33px;
         width: 100%;
     }
@@ -486,8 +402,7 @@
     width: 100%;
     max-width: 290px;
     height: 290px;  
-    object-fit: cover;
-   
+    object-fit: cover;  
    
 }
 
@@ -527,14 +442,9 @@
 }
 }
 
- }
-
-      
+ }    
        
-
-
-.header-img::before {
-  
+.header-img::before {  
     content: "";
     display: block;
     position: absolute;
@@ -573,17 +483,11 @@
     align-items: center;
 }
 
-
-
-
-.header-content-img {  
-        
-        margin-left: auto;
-        margin-right: auto;
-      /*  margin-top: -30px; 
-        z-index: -1; */
-        margin-bottom: 82px; 
-        transform: scale(1.77);
+.header-content-img {          
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 82px; 
+    transform: scale(1.77);
 
         img {  
             max-width: 100%; 
@@ -653,8 +557,7 @@
    
 }
 
-.title-medium {
- 
+.title-medium { 
     text-shadow: 0 3px 42px #ffffff;
     color: #000000; 
     font-size: 30px;
@@ -674,14 +577,11 @@
     
     // Медиа запрос для декстопов //
     @media (min-width: 1200px) {
-        text-shadow: 0 3px 42px #ffffff;
-        color: #000000; 
         font-size: 40px;
         font-weight: 800;
         font-style: normal;
         letter-spacing: normal;
         line-height: normal;
-        text-align: left;
         margin-bottom: 35px;
     }
 
@@ -694,7 +594,7 @@
     color: #000000;
     font-size: 18px;
     font-weight: 400;
-   line-height: 20px;
+    line-height: 20px;
     text-align: left;
     margin-bottom: 37px;
     letter-spacing: 1px;
@@ -707,8 +607,6 @@
     
     // Медиа запрос для декстопов //
     @media (min-width: 1200px) {
-        text-shadow: 0 3px 42px #ffffff;
-        color: #000000;
         font-size: 24px;
         font-weight: 400;
         font-style: normal;   

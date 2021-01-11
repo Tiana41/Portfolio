@@ -43,11 +43,7 @@
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom: 75px;
-        background-image: url(../img/BG/03.bg.jpg);
-        background-repeat: repeat-y;
-        background-position: center;
-        background-size: auto;
-        
+               
         .sections-title {              
             font-size: 52px;
             font-weight: 800;             
@@ -64,7 +60,7 @@
         background-position: center;
         background-size: auto;
         padding-top: 138px;
-        padding-bottom: 107px;
+        padding-bottom: 113px;
         font-family: 'Roboto';
         margin-left: auto;
         margin-right: auto;
@@ -73,7 +69,7 @@
         padding-right: 0;
     
         .sections-title {                
-            color: var(--text);        
+                  
             font-size: 64px;
             font-weight: 800;
             font-style: normal;
@@ -96,10 +92,8 @@
         
         p:last-child {
             margin-bottom: 0;
-        } 
-    
+        }     
     }
-
 }
 
 
@@ -107,28 +101,13 @@
 .content-time-line {
   max-width: 1005px;   
   margin: 0 auto; 
-    // Медиа запрос для планшетов и выше //
-
-    @media (min-width: 768px) {
-     /*   max-width: 600px;  */ 
-        margin: 0 auto; 
-    }
-    
-    // Медиа запрос для декстопов //
-    @media (min-width: 1200px) {
-        max-width: 1005px;   
-        margin: 0 auto; 
-    }
-
 }
 
 .timeline-block-item {
     position: relative;
-   /* width: 50%;  */
     padding-left: 98px;
     min-height: 182px;
     display: flex;  
-   /* align-items: center; */
 
     &:after {
         content: "";       
@@ -138,8 +117,7 @@
         left: 32px;
         width: 4px;
         border-radius: 2px;
-        background-color: #e1eef4; 
-        
+        background-color: #e1eef4;        
     }
  
     @media (min-width: 768px) {
@@ -148,12 +126,8 @@
     }
 
     @media (min-width: 1200px) {
-        position: relative;
-        width: 50%;
-        padding-left: 98px;
-        min-height: 182px;
-        display: flex;
-    } 
+
+     } 
 }
 
 
@@ -287,8 +261,7 @@
     // Медиа запрос для планшетов и выше //
 
     @media (min-width: 768px) {
-        font-size: 16px;       
-      /*  line-height: 22px; */
+        font-size: 16px;  
         padding-top: 21px;
         letter-spacing: 1.0px;
     }
@@ -328,8 +301,7 @@
 
     .line-bottom::after {
         display: none;    
-    }
-   
+    }   
 
     // Медиа запрос для планшетов и выше //
 
@@ -351,7 +323,6 @@
             height: 6px;         
         }   
     }
-
 }
 
 .timeline-block-item .title-little {
@@ -379,9 +350,7 @@
                 background-color: rgba(56, 102, 150, 0.7);
                 z-index: -1;
                 transition: 1s ease;
-            }
-        
- 
+            }       
  }
 } 
 
