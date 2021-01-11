@@ -1838,6 +1838,7 @@ br {
 }
 @media (min-width: 1200px) {
   .contacts-address::before {
+    display: block;
     position: absolute;
     content: "";
     top: 0;
