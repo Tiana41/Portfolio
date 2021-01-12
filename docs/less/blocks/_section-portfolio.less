@@ -12,13 +12,13 @@
         font-size: 42px;
         font-weight: 800;
         margin-bottom: 44px;
-       letter-spacing: 2.0px;
+        letter-spacing: 2.0px;
     }
 
       // Медиа запрос для планшетов и выше //
 
       @media (min-width: 768px) {
-          padding-top: 70px;
+          padding-top: 73px;
           padding-left: 15px;
           padding-right: 15px;
           padding-bottom: 106px;
@@ -40,11 +40,18 @@
         padding-right: 0;
 
         .sections-title {
-            color: #000000;
-            font-size: 64px;
-            font-weight: 800;
-            margin-bottom: 58px;
+           color: #000000;
+           font-size: 64px;
+           font-weight: 800;
+           margin-bottom: 140px;
            letter-spacing: 2.0px;
+        }
+
+        .line-bottom::after {
+            bottom: 11px;
+            left: -2px;
+            right: -2px;
+            height: 12px;        
         }
     }
 
@@ -205,7 +212,7 @@
     max-width: 560px;
     /*background-color: bisque; */
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 58px;
     text-decoration: none;
     color: #000;
     height: auto;
@@ -228,8 +235,9 @@
     }
     img {
         max-width: 100%;
-        height: 100%;
+        height: auto;
         vertical-align: middle;
+       
     } 
 
 }
@@ -251,18 +259,21 @@
         bottom: 0;
         height: 3px;
         width: 0;
-        background-color: var(--linehover);
+       /* background-color: var(--linehover); */
+       background-color: rgba(56, 102, 150, 0.4);
         z-index: -1;
         transition: 1s ease;
     }
 }  
-  .project-cards .title-medium:hover {
+  .project-cards:hover {
+    .title-medium {
     &:after {
         width: 100%;
     }
+}
 } 
 
-
+/*
 .portfolio-works-togger {
     display: none;
       // Медиа запрос для планшетов и выше //
@@ -337,65 +348,20 @@
 
 }
 
-.project-link {
-    display: block;
+*/
+ .project-cards-img {
+    display: block;  
     position: relative;
     transition: 3s;
-    z-index: 1;
-    margin-bottom: 25px;
-
-        // Медиа запрос для планшетов и выше //
-
-        @media (min-width: 768px) {
-            margin-bottom: 20px;
-            &:after {
-                content: "";
-                position: absolute; 
-                left: 0;
-                bottom: 0;
-                top: 0;
-                right: 0;
-                left: 0;
-                width: 0;
-                background-color: rgba(171, 200, 231, 0.9);
-                z-index: 1;
-                transition: 1s ease;            
-            }
-        }
-        
-        // Медиа запрос для декстопов //
-        @media (min-width: 1200px) {
-            display: block;
-            position: relative;
-            transition: 3s;
-            z-index: 1;
-            margin-bottom: 26px;
-
-            &:after {
-                content: "";
-                position: absolute; 
-                left: 0;
-                bottom: 0;
-                top: 0;
-                right: 0;
-                left: 0;
-                width: 0;
-                background-color: rgba(171, 200, 231, 0.9);
-                z-index: 1;
-                transition: 1s ease;
-            
-            }
-        }
-
-
-
-   .button {  
+    z-index: 1; 
+    overflow: hidden;
     
-   display: none;
+   .button {     
+   
       // Медиа запрос для планшетов и выше //
 
       @media (min-width: 768px) {
-        display: none;
+        
         height: 64px;
         line-height: 64px;    
         border-radius: 31px;       
@@ -420,10 +386,26 @@
     }
 
 } 
-}  
 
+}
 
-.project-link:hover {
+.project-cards-img::after {
+    content: "";
+    position: absolute; 
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(171, 200, 231, 0.9);
+    z-index: 1;
+    transition: 1s ease;   
+    transform: translateX(-100%);         
+}
+
+.project-cards:hover {
       // Медиа запрос для планшетов и выше //
 
       @media (min-width: 768px) {
@@ -463,12 +445,12 @@
     }
 }
 
-.project-link {  
+.project-cards {  
     .button {
           // Медиа запрос для планшетов и выше //
 
     @media (min-width: 768px) {
-        
+        display: none;
         transition: 1s ease;
         border: 1px;
         border-color: #ffffff;
@@ -506,6 +488,7 @@
 .text-portfolio-wrap {
     padding-left: 10px;
     padding-bottom: 6px;
+    padding-top: 25px;
 }
 
 .last-card {
@@ -536,3 +519,9 @@ br {
 }
 }
 
+.project-cards:hover {
+    .project-cards-img::after {
+        display: block;
+        transform: translate(0);
+    }
+}

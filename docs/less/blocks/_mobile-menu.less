@@ -6,13 +6,17 @@
     width: 100%;
     max-width: 320px;
     background-color: #ffffff;
-    z-index: 8;
+    z-index: 12;
     transform: translateX(100%);
     transition: 1s;
     padding: 28px;
     .social-block {
         margin-bottom: 35px;
     }
+    
+      // Медиа запрос для планшетов и выше //
+
+     
 
     @media (min-width:1200px) {
         display: none;
@@ -20,29 +24,39 @@
 }
 
 .mobile-menu.active {
-    transform: translateX(0);
-    z-index: 9;
+    transform: translateX(-38%);
+    z-index: 12;
+
+    @media (min-width: 768px) {
+        
+        transform: translateX(0);
+    }
 }
 
 .mobile-menu {
 .header-link {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000000;
     margin-bottom: 27px;
 }
 }
 
 .mobile-menu {
-    .header-logo {       
+    .header-logo {    
         margin-bottom: 30px;
     }
 
     .social-icons-item {
         
-        margin-right: 25px;
+        margin-right: 17px;
     }
 
     ul {
         margin-bottom: 20px;
+    }
+
+    .link-style {
+        color: #039be5;
+        border-bottom: 2px solid #039be5;
     }
   
 }

@@ -39,7 +39,7 @@ $(document).ready(function () {
      bodyEl.classList.remove('noscroll');
 
  }); 
-
+/*
  //-фильтрация проектов
  let containerEl = document.querySelector('#projects');
 
@@ -48,9 +48,9 @@ $(document).ready(function () {
          block: ""
      }
  });
-
+*/
  // FORM VALIDATE//
-
+/*
 $('.contact-form').validate({
     rules: {
         email: {
@@ -80,7 +80,7 @@ $('.contact-form').validate({
         ajaxFormSubmit();
     }
 })
-
+*/
 // Функция отправки формы на сервер//
 
     function ajaxFormSubmit() {

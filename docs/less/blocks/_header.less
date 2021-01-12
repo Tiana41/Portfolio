@@ -8,9 +8,7 @@
     margin-right: auto;
     height: auto;
     
-    .button {
-        display: none;
-    }
+    
       // Медиа запрос для планшетов и выше //
 
       @media (min-width: 768px) {
@@ -200,6 +198,7 @@
     justify-content: center;
     align-items: center; 
     display: none;
+    height: 30px;
       // Медиа запрос для планшетов и выше //
 
       @media (min-width: 768px) {
@@ -240,11 +239,11 @@
 } 
 
 .social-icons:hover svg .icon-1 {
-    fill: #0077b5;
+    fill: #eb4d97;
     transform: scale(1.01);
 }
 .social-icons:active svg .icon-1 {
-    fill: #0077b5;
+    fill: #eb4d97;
     transform: scale(1.01);
 }
 
@@ -305,7 +304,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center; 
+        align-items: flex-end; 
         width: 100%;
         height: 100%;
         position: relative;
@@ -354,7 +353,7 @@
     
     // Медиа запрос для декстопов //
     @media (min-width: 1200px) {
-        display: block;
+     /*   display: block; */
         width: 50%;
     }
 
@@ -398,22 +397,11 @@
     z-index: 2;
     margin-bottom: 52px;
 
-  img {    
-    width: 100%;
-    max-width: 290px;
-    height: 290px;  
-    object-fit: cover;  
-   
-}
-
   // Медиа запрос для планшетов и выше //
 
   @media (min-width: 768px) {
-    width: 50%;
-    position: relative;    
-    max-width: 100%;
-    height: auto;
-    z-index: 2;
+    width: 50%;      
+    max-width: 100%;   
     text-align: center;
     margin-bottom: 0;
     padding-left: 12px;
@@ -421,25 +409,10 @@
 
 // Медиа запрос для декстопов //
 @media (min-width: 1200px) {
-    width: 50%;
-    position: relative;
-    max-width: 100%;
-    height: auto;
-    z-index: 2;
+    max-width: 457px;    
+    width: 50%;  
     text-align: right;
     padding-left: 0;
-    
-    
-
-  img {
-   padding-top: 22px; 
-   max-width: unset;
-    width: 457px;
-    height: 432px;
-    margin-bottom: 0;
-    object-fit: cover;
-    vertical-align: bottom;
-}
 }
 
  }    
@@ -463,15 +436,8 @@
     
     // Медиа запрос для декстопов //
     @media (min-width: 1200px) {
-        content: "";
-        display: block;
-        position: absolute;
         top: 30%;
         left: 30%;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(244, 248, 249, 0.5);
-        z-index: -1;  
     }
 
     
@@ -510,12 +476,12 @@
         margin-right: auto;
         margin-top: -130px; 
         z-index: -1;       
-     
+     /*
        img {        
             max-width: 100%;
             display: block;
             height: auto;
-        }  
+        }  */
     }
 
 }
@@ -542,21 +508,6 @@
 
 }
 
-.social-column {
-    margin-bottom: 15px;
-      // Медиа запрос для планшетов и выше //
-
-      @media (min-width: 768px) {
-        margin-bottom: 26px;
-    }
-    
-    // Медиа запрос для декстопов //
-    @media (min-width: 1200px) {
-        margin-bottom: 26px;
-    }
-   
-}
-
 .title-medium { 
     text-shadow: 0 3px 42px #ffffff;
     color: #000000; 
@@ -577,11 +528,8 @@
     
     // Медиа запрос для декстопов //
     @media (min-width: 1200px) {
-        font-size: 40px;
-        font-weight: 800;
-        font-style: normal;
+        font-size: 40px;      
         letter-spacing: normal;
-        line-height: normal;
         margin-bottom: 35px;
     }
 
@@ -596,6 +544,7 @@
     font-weight: 400;
     line-height: 20px;
     text-align: left;
+    font-style: normal; 
     margin-bottom: 37px;
     letter-spacing: 1px;
     
@@ -607,15 +556,10 @@
     
     // Медиа запрос для декстопов //
     @media (min-width: 1200px) {
-        font-size: 24px;
-        font-weight: 400;
-        font-style: normal;   
-        line-height: 38px;
-        text-align: left;
-        margin-bottom: 38px;
-        letter-spacing: 1px;
+        font-size: 24px;     
+        line-height: 38px;      
+        margin-bottom: 38px;       
     }
-
 }
 
 .list-text {
@@ -638,8 +582,8 @@
 }
 
 .social-icons-item {
-     width: 50px;
-     display: inline-block;
+    width: 50px;
+    display: inline-block;
     margin-right: 32px;
   
     &:last-child {
@@ -666,21 +610,24 @@
 
 .social-block {
     display: flex;
-   /* justify-content: center; */
-    flex-direction: row;   
-   
+    flex-direction: row;     
 }
 
 .mail-link-block {
     bottom: 1px solid red;
+    margin-top: 26px;
 }
+
 .header-scils-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    
 
+    .button {
+        margin-right: 0;
+    }
+    
       // Медиа запрос для планшетов и выше //
 
       @media (min-width: 768px) {
@@ -693,8 +640,7 @@
     @media (min-width: 1200px) {
         display: flex;
         justify-content: space-between;
-        flex-direction: row;
-        width: 100%;
+        flex-direction: row;        
         margin-top: -94px;
         margin-left: -4px;
     }
@@ -745,11 +691,9 @@
     @media (min-width: 1200px) {
         display: inline-block;
     }
-
 }
 
 br {
-
     display: block;
     // Медиа запрос для планшетов и выше //
 
@@ -761,5 +705,4 @@ br {
     @media (min-width: 1200px) {
         display: block;
     }
-
 }
