@@ -81,24 +81,64 @@ $('.contact-form').validate({
     }
 })
 */
-// Функция отправки формы на сервер//
+	// Функция AJAX запрса на сервер
 
-    function ajaxFormSubmit() {
-        let string = $(".contact-form").serialize();
-        $.ajax({
-            type: "POST",
-            url: "php/mail.php", 
-            data: string,
+	function ajaxFormSubmit() {
 
-            success: function (html) {
-                $(".contact-form").slideUp(800);
-                $('#answer').html(html);
-            }
+		let string = $(".contact-form").serialize(); // Соханяем данные введенные в форму в строку.
+
+		//Формируем ajax запрос
+		$.ajax({
+			type: "POST", // Тип запроса - POST
+			url: "php/mail.php", // Куда отправляем запрос
+			data: string, // Какие даные отправляем, в данном случае отправляем переменную string
+
+			// Функция если все прошло успешно
+			success: function (html) {
+				$(".contact-form").slideUp(800);
+				$('#answer').html(html);
+			}
+		});
+		// Чтобы по Submit больше ничего не выполнялось - делаем возврат false чтобы прервать цепчку срабатывания остальных функций
+		return false;
+	}
+
+
+
+//отображение/скрытие карточек проектов по загрузке страницы
+if($(window).width() <1200){
+    $('.project-cards.hide-card').hide();
+    
+    $('.show-project-cards').on('click', function(){
+        $('.project-cards.hide-card').fadeIn();
+        $(this).hide();
+    })
+}
+else{
+    $('.project-cards.hide-card').fadeIn();
+    $('.show-project-cards').hide();
+}
+
+/*
+//отображение/скрытие карточек проектов при ресайзе страницы
+$(window).on('resize', function(){
+    if($(window).width() <1200){
+        $('.project-cards.hide-card').hide();
+        $('.show-project-cards').fadeIn();
+        $('.show-project-cards').on('click', function(){
+            $('.project-cards.hide-card').fadeIn();
+            $(this).css('display', 'none');
         });
-        return false;
-
     }
+    else{
+        $('.project-cards.hide-card').fadeIn();
+        $('.show-project-cards').hide();
+    } 
+});
+​*/
 })
+
+
 
 
 

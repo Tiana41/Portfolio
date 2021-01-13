@@ -8,7 +8,9 @@
     margin-right: auto;
     height: auto;
     
-    
+    .button {
+        display: none;
+    }
       // Медиа запрос для планшетов и выше //
 
       @media (min-width: 768px) {
@@ -46,7 +48,7 @@
       // Медиа запрос для планшетов и выше //
 
       @media (min-width: 768px) {
-        margin-bottom: 67px;
+        margin-bottom: 70px;
     }
     
     // Медиа запрос для декстопов //
@@ -349,12 +351,14 @@
 
       @media (min-width: 768px) {
         width: 50%;
+        padding-bottom: 15px;
     }
     
     // Медиа запрос для декстопов //
     @media (min-width: 1200px) {
      /*   display: block; */
         width: 50%;
+        padding-bottom: 0;
     }
 
     
@@ -389,33 +393,41 @@
 
 }
 
-.header-img {   
+.header-img {    
+    max-width: 290px;
     width: 100%;
-    height: auto;
-    position: relative;
-    max-width: 100%;
+    height: 290px;
+    position: relative;    
     z-index: 2;
     margin-bottom: 52px;
-
+       
   // Медиа запрос для планшетов и выше //
 
   @media (min-width: 768px) {
     width: 50%;      
-    max-width: 100%;   
-    text-align: center;
+    max-width: 295px;   
     margin-bottom: 0;
-    padding-left: 12px;
+    margin: 0 auto;
+    height: auto;
 }
 
 // Медиа запрос для декстопов //
 @media (min-width: 1200px) {
-    max-width: 457px;    
-    width: 50%;  
+    max-width: 457px;
+    width: 50%;
     text-align: right;
     padding-left: 0;
-}
+    margin: 0;
+    height: 407px;
 
- }    
+    img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+    }
+   }
+}    
        
 .header-img::before {  
     content: "";
@@ -425,8 +437,8 @@
     left: 10%;
     width: 100%;
     height: 100%;
-    background-color: rgba(244, 248, 249, 0.5);
-    z-index: -1;  
+    background-color: rgba(244, 248, 249, 0.5); 
+     z-index: -1;  
 
       // Медиа запрос для планшетов и выше //
 
@@ -476,12 +488,7 @@
         margin-right: auto;
         margin-top: -130px; 
         z-index: -1;       
-     /*
-       img {        
-            max-width: 100%;
-            display: block;
-            height: auto;
-        }  */
+     
     }
 
 }
@@ -614,8 +621,17 @@
 }
 
 .mail-link-block {
+    margin-top: 16px;
+    @media (min-width: 768px) {
+        margin-top: 26px;
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
     bottom: 1px solid red;
-    margin-top: 26px;
+        
+    }
+
 }
 
 .header-scils-wrapper {
@@ -706,3 +722,4 @@ br {
         display: block;
     }
 }
+
