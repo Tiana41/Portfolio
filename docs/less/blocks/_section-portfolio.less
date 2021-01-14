@@ -1,7 +1,7 @@
 .section-portfolio {   
     
     padding-top: 52px;
-    padding-bottom: 132px;
+    padding-bottom: 116px;
     background-color: #f4f8f9;
     font-family: 'Roboto';
     margin-left: auto;
@@ -78,22 +78,21 @@
     margin-bottom: 30px;
     text-decoration: none;
     color: var(--text);
+
+      
        .title-medium {
            display: inline-block;
            font-size: 22px;
            font-weight: 700;
-           margin-bottom: 15px;
-           }    
+           margin-bottom: 15px;         
+    }    
    
        .text-portfolio {    
            font-size: 16px; 
            margin-bottom: 4px;        
        }  
    
-       img {
-           height: 200px;
-       }
-   
+      
          // Медиа запрос для планшетов и выше //
    
          @media (min-width: 768px) {
@@ -118,13 +117,11 @@
                color: #000;
               }
    
-             img {
-                 height: 240px;
-             }
        }
        
        // Медиа запрос для декстопов //
        @media (min-width: 1200px) {
+           
            max-width: 360px;
            height: auto; 
            display: block;
@@ -133,7 +130,7 @@
            box-shadow: 0 4px 8px #c4d3e4; 
            border-style: solid;    
            border-color: rgba(196, 211, 228, 0.9);   
-          margin-bottom: 62px;
+           margin-bottom: 62px;
        
            .title-medium {
                display: inline-block;
@@ -146,12 +143,10 @@
                font-size: 20px; 
                margin-bottom: 4px;        
            }  
-       }
-   
-   
+       }   
    }
-.card-big {
-    
+
+.card-big {   
     
     max-width: 290px;
     /*background-color: bisque; */
@@ -167,18 +162,22 @@
         font-size: 22px;
         font-weight: 700;
         margin-bottom: 15px;
-        }    
+
+     }    
 
     .text-portfolio {    
         font-size: 16px; 
         margin-bottom: 4px;    
     } 
+    
+
+     
         // Медиа запрос для планшетов и выше //
 
         @media (min-width: 768px) {
             
         max-width: 338px;
-        margin-bottom: 30px;
+        margin-bottom: 35px;
 
         .title-medium {
             display: inline-block;
@@ -200,23 +199,24 @@
             color: #000;
             }
 
-        img {
-            max-width: 100%;
-            height: 240px;
-            vertical-align: middle;
-        } 
+     
     }
     
     // Медиа запрос для декстопов //
     @media (min-width: 1200px) {
         
-    max-width: 560px;
+   max-width: 560px;
     /*background-color: bisque; */
     display: block;
     margin-bottom: 58px;
     text-decoration: none;
     color: #000;
     height: auto;
+
+    .project-cards-img {
+        height: 370px;
+    }
+   
         
 
     .title-medium {
@@ -235,14 +235,7 @@
         text-decoration: none;
         color: #000;
     }
-    img {
-        max-width: 100%;
-        height: auto;
-        vertical-align: middle;
-        
-    } 
-
-}
+    }
 }
 
 .project-cards .title-medium {
@@ -251,9 +244,13 @@
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 6px;
-    z-index: 1;   
-    
-    
+    z-index: 1;  
+
+    &:nth-child(2) {           
+        line-height: 50px;        
+     }
+
+
     &:after {
         content: "";
         position: absolute; 
@@ -274,6 +271,23 @@
     }
 }
 } 
+
+
+/*
+.card-big .project-cards-img {
+   height: 200px;
+    @media (min-width: 768px) {
+        height: 260px;
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+       height: 367px; 
+    }
+}
+*/
+
+
 
 /*
 .portfolio-works-togger {
@@ -376,6 +390,8 @@
         display: none;
         font-weight: 800;
         color: #464646; 
+        
+    
     }
 
 } 
@@ -541,19 +557,3 @@ text-shadow: 0px 3px 42.32px rgba(255, 255, 255, 0.004);
 }
 
 }
-/*
-.hide-card {
-
-// Медиа запрос для планшетов и выше //
-
-@media (min-width: 768px) {
-    display: none;
-}
-
-// Медиа запрос для декстопов //
-@media (min-width: 1200px) {
-    display: block;
-}
-
-
-} */

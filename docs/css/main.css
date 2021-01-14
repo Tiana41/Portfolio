@@ -346,7 +346,7 @@ span::selection {
 .header-navigation {
   margin-bottom: 30px;
   position: relative;
-  z-index: 10;
+  /*   z-index: 10; */
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -699,7 +699,7 @@ span::selection {
 @media (min-width: 768px) {
   .header-content-img {
     transform: unset;
-    margin-top: -39px;
+    margin-top: -48px;
     margin-left: -10px;
   }
 }
@@ -765,7 +765,7 @@ span::selection {
   text-align: left;
   font-style: normal;
   margin-bottom: 37px;
-  letter-spacing: 1px;
+  /*  letter-spacing: 1px; */
 }
 @media (min-width: 768px) {
   .list-content {
@@ -889,7 +889,7 @@ br {
 }
 .section-portfolio {
   padding-top: 52px;
-  padding-bottom: 132px;
+  padding-bottom: 116px;
   background-color: #f4f8f9;
   font-family: 'Roboto';
   margin-left: auto;
@@ -956,6 +956,10 @@ br {
   margin-bottom: 30px;
   text-decoration: none;
   color: var(--text);
+  /*
+       img {
+           height: 200px;
+       } */
 }
 .project-cards .title-medium {
   display: inline-block;
@@ -967,12 +971,13 @@ br {
   font-size: 16px;
   margin-bottom: 4px;
 }
-.project-cards img {
-  height: 200px;
-}
 @media (min-width: 768px) {
   .project-cards {
     max-width: 338px;
+    /*
+             img {
+                 height: 240px;
+             } */
   }
   .project-cards .title-medium {
     display: inline-block;
@@ -990,9 +995,6 @@ br {
     line-height: normal;
     text-align: left;
     color: #000;
-  }
-  .project-cards img {
-    height: 240px;
   }
 }
 @media (min-width: 1200px) {
@@ -1017,6 +1019,9 @@ br {
     font-size: 20px;
     margin-bottom: 4px;
   }
+  .project-cards .project-cards-img {
+    height: 240px;
+  }
 }
 .card-big {
   max-width: 290px;
@@ -1040,7 +1045,7 @@ br {
 @media (min-width: 768px) {
   .card-big {
     max-width: 338px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
   .card-big .title-medium {
     display: inline-block;
@@ -1048,6 +1053,9 @@ br {
     font-weight: 700;
     margin-bottom: 5px;
     letter-spacing: normal;
+  }
+  .card-big .title-medium:nth-child(2) .title-medium {
+    min-height: 50px;
   }
   .card-big .text-portfolio {
     line-height: 1.2;
@@ -1061,7 +1069,7 @@ br {
   }
   .card-big img {
     max-width: 100%;
-    height: 240px;
+    /* height: 240px; */
     vertical-align: middle;
   }
 }
@@ -1074,6 +1082,9 @@ br {
     text-decoration: none;
     color: #000;
     height: auto;
+  }
+  .card-big .project-cards-img {
+    height: 370px;
   }
   .card-big .title-medium {
     display: inline-block;
@@ -1090,11 +1101,6 @@ br {
     text-align: left;
     text-decoration: none;
     color: #000;
-  }
-  .card-big img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
   }
 }
 .project-cards .title-medium {
@@ -1120,6 +1126,19 @@ br {
 .project-cards:hover .title-medium:after {
   width: 100%;
 }
+/*
+.card-big .project-cards-img {
+   height: 200px;
+    @media (min-width: 768px) {
+        height: 260px;
+    }
+    
+    // Медиа запрос для декстопов //
+    @media (min-width: 1200px) {
+       height: 367px; 
+    }
+}
+*/
 /*
 .portfolio-works-togger {
     display: none;
@@ -2105,6 +2124,11 @@ textarea .form-field {
 }
 .form-item:last-child {
   margin-bottom: 15px;
+}
+.contact-form__success {
+  font-size: 24px;
+  color: #5e5d5d;
+  text-shadow: 0px 3px 42.32px rgba(146, 145, 145, 0.004);
 }
 .footer {
   background-color: #6c7886;
