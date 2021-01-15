@@ -79,7 +79,7 @@ $('.contact-form').validate({
     submitHandler: function (form) {
         ajaxFormSubmit();
     }
-})
+}) 
 */
 	// Функция AJAX запрса на сервер
 
