@@ -2249,10 +2249,10 @@ textarea .form-field {
 .mobile-menu .header-link:hover {
   border-bottom: none;
 }
-.mobile-menu:after {
+.mobile-menu .header-link:after {
   border-bottom: none;
 }
-.mobile-menu:focus {
+.mobile-menu .header-link:focus {
   border-bottom: none;
 }
 .mobile-menu .header-logo {
