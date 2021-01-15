@@ -82,7 +82,8 @@ $('.contact-form').validate({
 }) 
 */
 	// Функция AJAX запрса на сервер
-
+    $(".contact-form").on('submit', ajaxFormSubmit);
+    
 	function ajaxFormSubmit() {
 
 		let string = $(".contact-form").serialize(); // Соханяем данные введенные в форму в строку.

@@ -37,7 +37,19 @@
 .header-link {
     border-bottom: 1px solid #000000;
     margin-bottom: 27px;
+
+    &:hover {
+        border-bottom: none;
+    }
 }
+
+     &:after {
+    border-bottom: none;
+}
+
+    &:focus {
+        border-bottom: none;
+    }
 }
 
 .mobile-menu {
@@ -59,6 +71,24 @@
         border-bottom: 2px solid #039be5;
     }
   
+    .header-link:after {    
+        content: "";
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        width: 0;
+        height: 5px;
+        background-color: rgba(56, 102, 150, 0.4);
+        transition: 0.5s;
+        z-index: -1;
+    } 
+
+    .header-link:hover:after {
+        width: 110%;
+        left: -5px;
+        right: -5px;
+    
+    }
 }
 
   

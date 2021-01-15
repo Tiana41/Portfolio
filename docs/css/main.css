@@ -44,6 +44,11 @@ h6 {
 #overlay.active {
   display: block;
 }
+@media (min-width: 1200px) {
+  #overlay.active {
+    display: none;
+  }
+}
 ul {
   margin: 0;
   padding: 0;
@@ -2241,6 +2246,15 @@ textarea .form-field {
   border-bottom: 1px solid #000000;
   margin-bottom: 27px;
 }
+.mobile-menu .header-link:hover {
+  border-bottom: none;
+}
+.mobile-menu:after {
+  border-bottom: none;
+}
+.mobile-menu:focus {
+  border-bottom: none;
+}
 .mobile-menu .header-logo {
   margin-bottom: 30px;
 }
@@ -2253,5 +2267,21 @@ textarea .form-field {
 .mobile-menu .link-style {
   color: #039be5;
   border-bottom: 2px solid #039be5;
+}
+.mobile-menu .header-link:after {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background-color: rgba(56, 102, 150, 0.4);
+  transition: 0.5s;
+  z-index: -1;
+}
+.mobile-menu .header-link:hover:after {
+  width: 110%;
+  left: -5px;
+  right: -5px;
 }
 /*# sourceMappingURL=main.css.map */
