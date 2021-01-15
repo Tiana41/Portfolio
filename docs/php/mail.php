@@ -9,7 +9,7 @@ $c = true;
 
 $project_name = "Portfolio";
 $admin_email  = "krylovairinka84@gmail.com";
-$email_from  = "info@portfolio.ru";
+$email_from  = "info@tiana46x.beget.tech";
 // $form_subject = trim($_POST["form_subject"]);
 
 // Serialize form fields - that filled-in by User
